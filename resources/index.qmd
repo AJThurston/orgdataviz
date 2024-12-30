@@ -1,0 +1,130 @@
+# Resources {.unnumbered}
+
+## Books
+
+-   [Big Book of R](https://www.bigbookofr.com/)
+-   [Graphic methods for presenting facts - Willard C. Brinton](https://archive.org/details/graphicmethodsfo00brinrich)
+-   [Fundamentals of Data Visualization - Claus O. Wilke](https://clauswilke.com/dataviz)
+-   [How Charts Lie - Alberto Cairo](https://www.amazon.com/How-Charts-Lie-Getting-Graphs/dp/1324001569)
+-   [The Visual Display of Quantitative Information - Edward R. Tufte](https://www.amazon.com/Visual-Display-Quantitative-Information/dp/096139214)
+-   [Envisioning Information - Edward R. Tufte](https://www.amazon.com/Envisioning-Information-Edward-R-Tufte/dp/0961392118)
+-   [Data Visualization: A Practical Introduction - Kieran Healy](https://www.amazon.com/Data-Visualization-Practical-Introduction/dp/069118162X)
+-   [Factfulness - Hans Rosling](https://www.amazon.com/Factfulness-Reasons-World-Things-Better/dp/1250107814)
+-   [The Truthful Art: Data, Charts, and Maps for Communication - Alberto Cairo](https://www.amazon.com/Truthful-Art-Charts-Maps-Communication/dp/0321934075)
+-   [Calling Bullshit: The Art of Skepticism in a Data-Driven World - Carl T. Bergstrom and Jevin D. West](https://www.amazon.com/Calling-Bullshit-Skepticism-Data-Driven-World/dp/0525509186)
+-   [How to Lie with Statistics - Darrell Huff](https://www.amazon.com/How-Lie-Statistics-Darrell-Huff/dp/0393310728)
+    -   Census: 19 chances out of 20 the figures have a degree of precision
+    -   Giselle's norms
+    -   Normal != desirable
+    -   Armchair correspondent
+    -   How they use language to couch statistics, over 3/4 have power available, available is not powered
+    -   What is probable error and why is it no longer used
+    -   When numbers in tabular form are taboo and words will not do the work well. as is often the case. there is one answer left: Draw a picture.
+    -   Beware of pictographs with disproportionate widths/volumes
+    -   Suspiciously precise
+    -   Clear weather is more dangerous that foggy weather
+    -   Safer to be in the Navy than NYC
+    -   Have students go to spurious correlation website
+    -   The darkening shadow first national bank of Boston and Newsweek
+    -   Shifting percentages based on different bases. %lift as a percent of before or after. To offset a pay cut of 50%, you need a raise of 100%
+    -   Percent, percentage point, percentile
+    -   Statistics is as much art as it is practice
+-   [Weapons of Math Destruction - Cathy O’Neil](https://www.amazon.com/Weapons-Math-Destruction-Increases-Inequality/dp/0553418815)
+-   [The Data Detective - Tim Harford](https://www.amazon.com/Data-Detective-Easy-Rules-Statistics/dp/0593084595)
+-   [May Contain Lies](https://www.amazon.com/May-Contain-Lies-Statistics-Biases_And/dp/0520405854)
+    -   Knowing is have the battle, so even with the knowledge, we're only halfway there
+-   [Harvard ebook: Intro to Data Science: Intro to Data Visualization](https://rafalab.dfci.harvard.edu/dsbook-part-1/dataviz/ggplot2.html)
+-   [Visual Complexity: Mapping Patter of Information - Manual Lima](https://www.amazon.com/Visual-Complexity-Mapping-Patterns-Information/dp/1616892196)
+
+## Cheatsheets
+
+-   medium.com/responsibleml/data-visualization-cheat-sheets-1c12ba8a7671
+-   Posit cheat sheets: <https://posit.co/resources/cheatsheets/>
+-   Ggplot2 data visualization cheat sheet: <https://rstudio.github.io/cheatsheets/data-visualization.pdf>
+-   Data Viz cheat sheet: <https://s3.amazonaws.com/assets.datacamp.com/email/other/Data+Visualizations+-+DataCamp.pdf>
+-   Core principles of datavis: <https://policyviz.com/wp-content/uploads/2018/08/PolicyViz-DataViz-Cheatsheet.pdf>
+
+## Courses
+
+-   UC Berkley: Visualization enhances exploratory analysis as well as efficient communication of data results. This course focuses on the design of visual representations of data in order to discover patterns, answer questions, convey findings, drive decisions, and provide persuasive evidence. The goal is to give you the practical knowledge you need to create effective tools for both exploring and explaining your data. Exercises throughout the course provide a hands-on experience using relevant programming libraries and software tools to apply research and design concepts learned.
+-   Coursera dataviz course: <https://www.coursera.org/learn/jhu-data-visualization-r>
+
+## Datasets
+
+-   <https://r-packages.io/datasets>
+-   ajthurston.com/validation
+-   IBM Human Resources Attrition Dataset
+
+## Glossary
+
+-   Data visualization is the practice of communicating quantitative information through visual means. It's goal is to take detailed individual or aggregate data to identify trends, group differences, and relationships among data to make the most salient findings readily accessible to technical and non-technical audiences alike. Data tables are not data visualization as they do not summarize data they simply present it.
+-   Organizational data visualization is communicating quantitative information visually for the purposes of aiding in work-related decision-making.
+-   This is contrasted from data art, which is the creation of aesthetically enjoyable data displays principally for their novelty or enjoyment.
+
+## Sources
+
+-   https://hbr.org/data-visuals
+-   https://hbr.org/offers/visual-library
+-   https://medium.com/tag/data-visualization
+-   https://www.modernstatisticswithr.com/
+-   <https://policyviz.com/>
+-   https://www.nytimes.com/spotlight/graphics
+-   https://www.qlik.com/blog
+-   <https://stephanieevergreen.com/blog/>
+-   <https://www.storytellingwithdata.com/blog>
+-   https://tellingstorieswithdata.com/
+-   <http://www.thefunctionalart.com/>
+-   <https://visualcapitalist.com>
+-   <https://visualisingdata.com/>
+
+## Tools
+
+-   Tool for adding live coding in course: https://r-wasm.github.io/quarto-live/
+-   Surveydown for collecting data: https://x.com/johnhelveston/status/1828124022514577432
+-   Chart pickers:
+    -   From Data to Viz visualization chooser: <https://www.data-to-viz.com/>
+    -   <https://datavizcatalogue.com/>
+-   Esquisse package R drag and drop ggplot2
+
+## Videos
+
+-   Nicola Rennie Spaghetti code talk: <https://nrennie.rbind.io/talks/useR-spaghetti-code/slides.html#/section>; video: <https://www.youtube.com/watch?v=wbhWl5-xR10>
+-   Bayron design hour long video on data visualization: https://youtu.be/tnikYc0O0-o
+-   [x.com/SpencrGreenberg/status/1746562746206863595/photo/2](https://x.com/SpencrGreenberg/status/1746562746206863595/photo/2)
+-   [clearerthinking.org/post/we-tested-the-predictive-power-of-astrology-here-are-the-results](https://www.clearerthinking.org/post/we-tested-the-predictive-power-of-astrology-here-are-the-results)
+
+## Random
+
+-   Games:
+    -   Data Land [Board Game](https://www.juliepeasley.com/data-land-board-game)
+    -   Charty Party [Card Game](https://www.veryspecialgames.com/products/charty-party)
+-   Newsweek fairness meter: https://www.newsweek.com/fairness-meter
+-   Visualizing only inferential uncertainty, compared to outcome variability, can result in significant overestimates of treatment effects, even among highly trained experts (Zhang, et al., 2023). Inferential uncertainty (how precisely a statistic is estimated) and outcome variability (how much individual outcomes differ). This confusion can lead to an "illusion of predictability," where people overestimate the certainty and significance of scientific findings.
+-   Data analysis workfow: <https://archive.is/T1TsC>
+-   Citedrive for bibliographic references for RStudio: citedrive.com/en/quarto
+-   Book Title: Organizational Data Visualization: Communicating clearly, concisely, and convincingly.
+-   Blue dot effect in picking colors for continuous variable scale like viridis, see cognitive biases notes in obsidian
+-   <https://pyoflife.com/data-visualization-in-r-with-100-examples/>
+-   <https://illustratingdata.com/tag/teagan-white/>
+-   <https://handsondataviz.org/>
+-   <https://datavizs24.classes.andrewheiss.com/lesson/01-lesson.html>
+-   Videos on cognitive load
+    -   <https://youtube.com/shorts/nmNMasnNBQY>
+    -   <https://www.youtube.com/watch?v=Pmr_DeM815w>
+-   It would be tough to visualize a latent state–trait model with multiple indicators and autoregression across four measurement occasions in a simple, succinct, and “beautiful” way. Instead, the best visuals, in terms of effectively communicating and persuading the audience, focus on not much more than means (e.g., bar charts), variances (e.g., scatterplots), and groupings (e.g., social networks) (Ahmad & Zhou)
+-   To form positive judgments of numerical information, people must be able to evaluate the “goodness” of a number (Voss & Lake, 2020)
+-   Storytelling with data seminar: [The art of exploring and explaining data](https://www.youtube.com/live/IfKlOC5HSHI)
+-   Ted Talk (great statistics lecture): [Hans Rosling: The best stats you've ever seen](https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen?language=en&subtitle=en)
+-   <https://www.ted.com/talks/hans_rosling_reveals_new_insights_on_poverty?language=en>[↩︎](https://rafalab.dfci.harvard.edu/dsbook-part-1/dataviz/intro-dataviz.html#fnref5)
+-   <https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen>[↩︎](https://rafalab.dfci.harvard.edu/dsbook-part-1/dataviz/intro-dataviz.html#fnref6)
+-   R Discovery App
+-   It would be tough to visualize a latent state–trait model with multiple indicators and autoregression across four measurement occasions in a simple, succinct, and “beautiful” way. Instead, the best visuals, in terms of effectively communicating and persuading the audience, focus on not much more than means (e.g., bar charts), variances (e.g., scatterplots), and groupings (e.g., social networks) (Ahmad & Zhou)
+-   To form positive judgments of numerical information, people must be able to evaluate the “goodness” of a number (Voss & Lake, 2020)
+-   Can grab attention tho: <https://x.com/szucsi/status/1798700114690597353>
+-   Misleading graphs are another crucial topic in data visualization. These are charts that misrepresent data, leading to incorrect conclusions. They can be intentionally deceptive or result from errors in data handling or graph construction. Common methods of creating misleading graphs include truncating axes, improper scaling, using 3D effects, omitting data, and biased labeling. These practices can distort data interpretation, making small differences appear significant or large differences appear minor. To avoid misleading graphs, strategies include clear labeling, appropriate scaling, and avoiding unnecessary complexity. Proper data visualization aims to present data accurately without manipulation, ensuring the audience can interpret the information correctly.
+-   How to make figures and presentations friendly to colorblind people: <https://jfly.uni-koeln.de/color/>
+-   Modern data viz in R: <https://pyoflife.com/modern-data-visualization-with-r/>
+-   Dataviz with R course: <https://cognitiveclass.ai/courses/data-visualization-with-r#about-course>
+-   Multiple courses: <https://www.datavis.ca/courses/>
+-   Charts to make sense of 2024 from HBR: https://archive.ph/EJy0O
+-   [NYT: From Inflation to Bitcoin, 9 Charts That Explain 2024](https://www.nytimes.com/2024/12/21/business/dealbook/business-economy-charts.html): [archived link](https://archive.is/1FDZd)

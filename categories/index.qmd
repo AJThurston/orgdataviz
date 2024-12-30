@@ -1,0 +1,49 @@
+---
+format:
+  html:
+    toc: true
+    toc-expand: 3
+---
+
+# Visualizing Categories
+
+## Frequencies and Distributions
+
+### Histograms
+
+### Density Plot
+- Demonstrating amounts (e.g., frequencies, distributions bar charts)
+	- Bar charts, loading bar chart as whitespace is information as well
+	- Communicating the lack of results is just as important as communicating the presence of results. Audiences are predispositioned to want to look for differences, but you must help them understand the MANIFOLD of differences, the larger context, that while there may be 2 differences among 10, the other 8 are not. You'd be surprised how often you need to state this explicitly.
+	- ![[apple_performance.png]]
+
+### Icon array
+	- Zhang article here
+
+### Jitterplot
+- [YouTube: Leila Gharani: Make Beautiful Excel Charts Like The Economist (file included) (19 minutes)](https://youtu.be/wP8NWRR0Fdg)
+
+### Targets
+	- ![[targets_eds.png | 500]]
+
+## Descriptives Statistics
+
+- Visualization of descriptive statistics and distributions
+- Visualization of IQRs with density and quantiles overlaid
+
+### Raincloud plot
+
+	- Raincloud plots: https://medium.com/@amorimfranchi/raincloud-plots-for-clear-precise-and-efficient-data-communication-4c71d0a37c23 
+	- ![[raincoud.png | 500]]
+	- ![[dataviz_cpuperformance.png | 500]]
+
+### Parts of a Whole
+
+- Or parts of a whole
+- We don't do pie charts because of this: https://www.youtube.com/shorts/4kxI4EjL3rg
+	- Our brains are not built to process just how long things are around
+- Tricolor/ternary/triangle plot: [WSJ: What type of voter are you?](https://www.wsj.com/politics/elections/election-2024-quiz-poll-ideology-7533f46b)
+	- [Instagram link](https://www.instagram.com/p/C8F9PRNNd_b/)
+	- ![[wsj_what_type_voter_ternary.png | 500]]
+	- ![[soil_ternary_plot.png | 500]]
+		- https://github.com/jschoeley/tricolore

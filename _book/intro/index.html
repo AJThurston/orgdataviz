@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.54">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>1&nbsp; Introduction – Organizational Data Visualization</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../time/index.html" rel="next">
+<link href="../index.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../intro/index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">ODV</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/AJThurston/orgdataviz" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../intro/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../time/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Visualizing Time</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../categories/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Visualizing Categories</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reldescrib/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Visualizing Relationships I</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../relexplain/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Visualizing Relationships II</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../space/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualizing Space</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../interact/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Interactive Visualization</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../context/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Contextual Considerations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#a-multidisplinary-approach" id="toc-a-multidisplinary-approach" class="nav-link active" data-scroll-target="#a-multidisplinary-approach"><span class="header-section-number">1.1</span> A multidisplinary approach</a></li>
+  <li><a href="#data-information-knowledge-and-wisdom" id="toc-data-information-knowledge-and-wisdom" class="nav-link" data-scroll-target="#data-information-knowledge-and-wisdom"><span class="header-section-number">1.2</span> Data, Information, Knowledge, and Wisdom</a></li>
+  <li><a href="#visual-hierarchy" id="toc-visual-hierarchy" class="nav-link" data-scroll-target="#visual-hierarchy"><span class="header-section-number">1.3</span> Visual Hierarchy</a></li>
+  <li><a href="#chartjunk" id="toc-chartjunk" class="nav-link" data-scroll-target="#chartjunk"><span class="header-section-number">1.4</span> Chartjunk</a></li>
+  <li><a href="#audience" id="toc-audience" class="nav-link" data-scroll-target="#audience"><span class="header-section-number">1.5</span> Audience</a></li>
+  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools"><span class="header-section-number">1.6</span> Tools</a></li>
+  <li><a href="#tables" id="toc-tables" class="nav-link" data-scroll-target="#tables"><span class="header-section-number">1.7</span> Tables</a></li>
+  <li><a href="#color" id="toc-color" class="nav-link" data-scroll-target="#color"><span class="header-section-number">1.8</span> Color</a>
+  <ul class="collapse">
+  <li><a href="#color-perception" id="toc-color-perception" class="nav-link" data-scroll-target="#color-perception"><span class="header-section-number">1.8.1</span> Color Perception</a></li>
+  <li><a href="#color-theory" id="toc-color-theory" class="nav-link" data-scroll-target="#color-theory"><span class="header-section-number">1.8.2</span> Color Theory</a></li>
+  <li><a href="#color-psychology" id="toc-color-psychology" class="nav-link" data-scroll-target="#color-psychology"><span class="header-section-number">1.8.3</span> Color Psychology</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="a-multidisplinary-approach" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="a-multidisplinary-approach"><span class="header-section-number">1.1</span> A multidisplinary approach</h2>
+<p>The SIOP Education and Training (E&amp;T) guidelines stipulate students of I-O psychology should be proficient in written and oral communication skills. Visual communication is becoming increasingly important in the workplace, and many important decisions rest on one simple visual tool for communicing quantiative information. Data visualization skills can make you a more competitive job applicant.</p>
+<p>ODV requires a multidisplinary approach. First, borrowing from computer science, this course uses the R programming language as it’s focused on statistics and visualization. You should already have familiarity with this software and this course aims to enhance it to allow your work to be reproducible. Second, ODV borrows from graphic design. Design thinking allows us to empathize with our audience to ensure they understand the data presented to then which can aid their decision-making. This course will require you to capitilize on your knowledge of I-O psychology and psychological statistics and enhance them with programming and design skills.</p>
+</section>
+<section id="data-information-knowledge-and-wisdom" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="data-information-knowledge-and-wisdom"><span class="header-section-number">1.2</span> Data, Information, Knowledge, and Wisdom</h2>
+<ul>
+<li>The cognitive psychology of visual information processing</li>
+<li>Visual communication best practices</li>
+<li>Review of data types (e.g., nominal, ordinal, interval, ratio data)</li>
+<li>Data, information, knowledge, and wisdom pyramid</li>
+<li>The facts DON’T speak for themselves</li>
+<li>Keep it simple, stupid</li>
+<li>AGILE: Think like a software developer
+<ul>
+<li>BHAG: Big Hairy Audacious Goals</li>
+<li>KPIs: Key Performance Indicator</li>
+<li>OKRs: Objective Key Results</li>
+</ul></li>
+<li>The goal of this course is to give you a data visualization portfolio to make you competitive</li>
+<li>Tell ’em what you’re going to tell them. Tell them. Then tell ’em what you just told them.&nbsp;</li>
+<li><a href="https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization">TED: The beauty of data visualization - David McCandless (18 minutes)</a>
+<ul>
+<li>“Let the dataset change your mindset”</li>
+</ul></li>
+<li><a href="https://www.canva.com/learn/design-thinking/">Canva: How design thinking is used to solve problems</a><a href="https://archive.is/GdwuO">Archive</a></li>
+</ul>
+</section>
+<section id="visual-hierarchy" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="visual-hierarchy"><span class="header-section-number">1.3</span> Visual Hierarchy</h2>
+<pre><code>-   Visual hierarchy refers to the arrangement of design elements in a way that guides the viewer's eye to the most important information first. It leverages factors like size, color, contrast, alignment, and spacing to create a structured flow through content.
+-   Key principles include:
+    -   **Size**: Larger elements draw more attention.
+    -   **Contrast**: Differences in color or tone highlight important areas.
+    -   **Alignment**: Consistent positioning helps organize information.
+    -   **Proximity**: Elements placed closely together are perceived as related.
+    -   **Whitespace**: Areas left empty create focus by reducing visual clutter.
+-   This design approach helps prioritize content, making it easier for users to quickly find key information.
+-   Resources:
+    -   [Canva: Visual Hierarchy](https://www.canva.com/learn/visual-hierarchy/)[Archive](https://archive.is/R2b1n)</code></pre>
+<ul>
+<li>Visual Encoding (Sinar, 2018) <img src="../images/visual_encoding.png" class="img-fluid" alt="Visual encoding hierarchy from Sinar (2018)"></li>
+</ul>
+</section>
+<section id="chartjunk" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="chartjunk"><span class="header-section-number">1.4</span> Chartjunk</h2>
+<ul>
+<li>Chartjunk refers to unnecessary or distracting visual elements in charts and graphs that do not contribute to the understanding of the data. These elements, such as excessive grid lines, unnecessary text, or 3D effects, clutter visual representations and obscure the data’s message. While some argue that chartjunk can make charts more memorable, others believe it detracts from clarity and precision.</li>
+<li>Darkhorse analytics: data looks better naked, data minimalism: https://x.com/dhanalytics/status/1519650227329798144</li>
+<li>Although design is an important part of data visualization! It can go too far the other way as well.</li>
+<li>R is often critiqued for the necessity of supplementation (e.g., annotation) but this is not a technical limitation; rather, R users tend to underinvest in design at higher rates compared to Illustrator or D3.js users: https://medium.com/nightingale/you-can-design-a-good-chart-with-r-5d00ed7dd18e</li>
+</ul>
+</section>
+<section id="audience" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="audience"><span class="header-section-number">1.5</span> Audience</h2>
+<ul>
+<li>A really simply difference is that in technical audiences I use words like error to mean uncertainty, for non-technical audiences I do not.</li>
+<li>Understanding the audience is key to data visualization.</li>
+<li>The data don’t speak for themselves and advocates for the data often don’t represent it well.</li>
+<li>The choir does need to be preached to.</li>
+<li>Many decision-makers try to outsource their decision-making to data.</li>
+<li>Decision-makers &amp; advocates have more in common with each other than either of them have in common with the data.</li>
+<li>Subjective data is just as if not more important than the objective data, but objective data can conceal subjectivity as well; for example, even something as objective as sales must account for how difficult sales are in one region over another.</li>
+<li>Facts tell and stories sell, people prefer anecdotes.</li>
+<li>Even though knowledge is half the battle, the other half is yet won.</li>
+</ul>
+</section>
+<section id="tools" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="tools"><span class="header-section-number">1.6</span> Tools</h2>
+<ul>
+<li>Orientation to R, Rstudio, Posistron IDE, Quarto, and ggplot2</li>
+<li>Using Git and version control and GitHub</li>
+<li>R is just a very sophisticated calculator and it will do precisely what you tell it to do</li>
+<li>Data storytelling: <a href="https://m.youtube.com/watch?v=IfKlOC5HSHI" class="uri">https://m.youtube.com/watch?v=IfKlOC5HSHI</a></li>
+<li>How to create a Quarto document and export to PDF
+<ul>
+<li>Quarto execution opts: <a href="https://quarto.org/docs/computations/execution-options.html" class="uri">https://quarto.org/docs/computations/execution-options.html</a></li>
+<li>Reprex package R <a href="https://reprex.tidyverse.org/articles/learn-reprex.html" class="uri">https://reprex.tidyverse.org/articles/learn-reprex.html</a></li>
+<li>Why individual level data are important: <a href="https://x.com/sc_cath/status/1799797169764844000" class="uri">https://x.com/sc_cath/status/1799797169764844000</a></li>
+</ul></li>
+<li>R :: packages
+<ul>
+<li>I will always use the curly bracket for {packages}</li>
+</ul></li>
+<li>R :: ggplot2
+<ul>
+<li>The R programming language uses {ggplot2} to make great data visualizations.</li>
+<li>https://ggplot2.tidyverse.org/articles/ggplot2.html</li>
+<li>https://ggplot2.tidyverse.org/reference/index.html</li>
+<li>Grammar of graphics</li>
+<li>Uses layers to build</li>
+</ul></li>
+</ul>
+<p><img src="../images/ggplot2_overview_grammar_layers.png" class="img-fluid"></p>
+</section>
+<section id="tables" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="tables"><span class="header-section-number">1.7</span> Tables</h2>
+<ul>
+<li>Tables are not data visualization</li>
+<li><a href="https://jthomasmock.github.io/gtExtras/articles/plotting-with-gtExtras.html" class="uri">https://jthomasmock.github.io/gtExtras/articles/plotting-with-gtExtras.html</a></li>
+<li>Interactive tables in Quarto: https://holtzy.github.io/quarto-tricks/interactive-table/</li>
+<li>Reactable (Quarto integration limited): https://glin.github.io/reactable/articles/examples.html</li>
+<li>DT is a great package, does work with Quarto</li>
+<li>{gt} and {gtExtra} is for pretty tables (example in ajthurston.com/knolling)</li>
+</ul>
+</section>
+<section id="color" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="color"><span class="header-section-number">1.8</span> Color</h2>
+<section id="color-perception" class="level3" data-number="1.8.1">
+<h3 data-number="1.8.1" class="anchored" data-anchor-id="color-perception"><span class="header-section-number">1.8.1</span> Color Perception</h3>
+<ul>
+<li>Color perception: black face vs white face illusion: <a href="https://m.youtube.com/watch?v=zXU0O0OqkmQ" class="uri">https://m.youtube.com/watch?v=zXU0O0OqkmQ</a></li>
+<li>Color is an important part of data visualization because it helps to highlight the most important differences or trends, making it easy to see. It’s one of the fundamental ways to highlight data.</li>
+<li>Color is also an important part of organizational or individual branding. Thinking about the ubiquity of Coca-Cola red or Pepsi blue.</li>
+<li>Color perception from evolutionary psychology foundation and then cultural enforcement which drives differences</li>
+</ul>
+</section>
+<section id="color-theory" class="level3" data-number="1.8.2">
+<h3 data-number="1.8.2" class="anchored" data-anchor-id="color-theory"><span class="header-section-number">1.8.2</span> Color Theory</h3>
+<ul>
+<li>Color Wheel: The primary colors are red, green, and blue because that’s what our eyes can see. Red, blue, yellow is additive color theory from paint pigment days and not really representative of how color works.</li>
+<li>Color Harmony
+<ul>
+<li>Color harmony involves choosing colors that work well together and are pleasing to the eye. Common color harmony schemes include:</li>
+<li>Complementary Colors: Colors opposite each other on the color wheel (e.g., red and green) that create high contrast and vibrant looks.</li>
+<li>Analogous Colors: Colors next to each other on the color wheel (e.g., blue, blue-green, and green) that create serene and comfortable designs.</li>
+<li>Triadic Colors: Three colors evenly spaced on the color wheel (e.g., red, yellow, and blue) that offer balanced and vibrant combinations.</li>
+<li>Split-Complementary Colors: A base color and the two colors adjacent to its complementary color, offering high contrast but less tension than complementary colors.</li>
+</ul></li>
+<li>Color Context: The perception of a color can change depending on its context. For instance, a color may appear different against various background colors. Understanding how colors interact and influence each other helps in creating effective visualizations.</li>
+</ul>
+</section>
+<section id="color-psychology" class="level3" data-number="1.8.3">
+<h3 data-number="1.8.3" class="anchored" data-anchor-id="color-psychology"><span class="header-section-number">1.8.3</span> Color Psychology</h3>
+<p>(I need to look into the research on this more before I teach it) Colors can evoke emotions and associations: - Red: Energy, urgency, passion. - Blue: Trust, calm, professionalism. - Green: Growth, health, tranquility. - Yellow: Happiness, attention, caution. - Purple: Luxury, creativity, wisdom. - Orange: Enthusiasm, warmth, caution. - Color Associations - Red - Negative Values: Red is often used to indicate negative values, losses, or decreases. - Errors and Alerts: Red can signify errors, warnings, or urgent issues that need immediate attention. (there’s research on this, the red pen effect) - Critical States: In status indicators, red often represents critical conditions or failures. - Green - Positive Values: Green is commonly associated with positive values, gains, or increases. - Success and Approval: Green can indicate success, completion, or approval. - Safe and Normal States: In status indicators, green represents safe, normal, or optimal conditions. - Yellow - Caution: Yellow often signifies caution, warnings, or conditions that require attention but are not yet critical. - Intermediate Values: Yellow can be used for intermediate values between positive (green) and negative (red) extremes. - Blue - Neutral: Blue is often used as a neutral color to represent general information, averages, or non-critical data. - Information and Support: Blue can indicate informational messages or support functions. - Orange - Warning: Orange is used to indicate warnings or issues that are of moderate concern. - Pending Actions: It can also represent pending actions or items that are in progress. - Color Usage: Using color effectively in data visualization helps in communicating information clearly: - Highlighting Important Data: Use bold or contrasting colors to emphasize key data points. - Grouping Data: Use similar colors to group related data, making patterns and relationships easier to identify. - Sequential Data: Use gradient scales (light to dark) to represent sequential data, indicating progression or intensity. - Diverging Data: Use two contrasting colors to show deviation from a central point, often used in heat maps or to show differences.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../time/index.html" class="pagination-link" aria-label="Visualizing Time">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Visualizing Time</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Andrew J. Thurston © 2025</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

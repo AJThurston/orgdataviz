@@ -1,9 +1,46 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+Welcome to Dr. [AJ Thurston](https://ajthurston.com)'s course on Organizational Data Visualization (ODV) as a part of the [George Mason University Industrial and Organizational Psychology program](https://io.gmu.edu), focused on our Masters of Professional Studies in I-O students. The ODV course is designed to train students to communicating quantitative information clearly, concisely, and convincingly to organizational stakeholders.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+## Prerequisites
 
-```{r}
-1 + 1
-```
+This course requires a graduate level understanding of psychological statistics and a basic understanding of working with R and the {ggplot2} R package in particular. Specifically, students should have already completed PSYC 601: Applied Data Analysis in Psychology 1 or sought expressed written approval from the instructor in advance of the course.
+
+Students are encouraged to have already installed R, R Studio, and Positron. This course from Microsoft is recommended to build basic familiarity with R, the {tidyverse} and {ggplot2} R packages:\
+- [Microsoft: Explore and analyze data with R (1 hour)](https://learn.microsoft.com/en-us/training/modules/explore-analyze-data-with-r/). Students are encouraged to maintain their code on Github and to familiarize themselves with version control (e.g., git).
+
+## Software
+
+Download and install the following software:
+
++------------------------------------------------------------+-------------------------------------------------------------------------------------+
+| [R](https://cran.rstudio.com/)                             | -   Open source, statistical computing & graphics environment                       |
+|                                                            |                                                                                     |
+|                                                            | -   Large package (tool) library                                                    |
+|                                                            |                                                                                     |
+|                                                            | -   The engine of our data visualization                                            |
++------------------------------------------------------------+-------------------------------------------------------------------------------------+
+| [R Studio](https://posit.co/download/rstudio-desktop/)     | -   Integrated Development Environment (IDE) for writing and running R code         |
++------------------------------------------------------------+-------------------------------------------------------------------------------------+
+| [Positron (Beta)](https://positron.posit.co/download.html) | -   IDE for R code but flexible for other languages as well                         |
+|                                                            |                                                                                     |
+|                                                            | -   Beta software with full release Fall 2025                                       |
++------------------------------------------------------------+-------------------------------------------------------------------------------------+
+| [Quarto](https://quarto.org/docs/get-started/)             | -   Notes code an output in one R Markdown (.qmd) document                          |
+|                                                            |                                                                                     |
+|                                                            | -   Uses Markdown language to create files exportable as HTML, PDF & Word docs      |
++------------------------------------------------------------+-------------------------------------------------------------------------------------+
+| [Github Desktop](https://github.com)                       | -   Popular git-based version control system                                        |
+|                                                            |                                                                                     |
+|                                                            | -   Desktop version uses a graphic user interface (GUI) to simplify version control |
++------------------------------------------------------------+-------------------------------------------------------------------------------------+
+
+## Course Textbook
+
+[Yau, N. (2024). *Visualize This: The flowingdata guide to design, visualization, and statistics second edition*. John Wiley and Sons.](https://www.amazon.com/Visualize-This-FlowingData-Visualization-Statistics-dp-1394214863/dp/1394214863)
+
+## What is Org Dataviz?
+
+Data visualization is the communication of numeric information using graphic displays a skill, much like written & oral communication skills. Data visualization can also be art, designed to evoke a feeling or thought. Data visualization typically has two main functions: exploratory visualizations which reveal new patterns & relationships; explanatory visualizations evaluate hypotheses or aid decision-making. Not all data visualization is ODV.
+
+**Organizational data visualization is the production of visual displays of quantitative data to support organizational decision-making** which aims to describe, explain, predict, and change human behavior at work. ODV is not just data visualization as in related technical fields like biology or operational business components like logistics since these focus on non-human behavior (e.g., animals in biology) or behaviors of non-human systems (e.g., supply chain bottlenecks in logistics). ODV is distinct from data art (e.g., [reddit.com/r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful)) in that the primary purpose of data art is to entertain or for purely aesthetic purposes ODV is ruthlessly useful and simple and should make decisions obvious to stakeholders.

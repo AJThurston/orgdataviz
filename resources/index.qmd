@@ -36,6 +36,10 @@
 -   [Harvard ebook: Intro to Data Science: Intro to Data Visualization](https://rafalab.dfci.harvard.edu/dsbook-part-1/dataviz/ggplot2.html)
 -   [Visual Complexity: Mapping Patter of Information - Manual Lima](https://www.amazon.com/Visual-Complexity-Mapping-Patterns-Information/dp/1616892196)
 
+## Blogs
+
+- [Krisztina Szucs' blog](https://krisztinaszucs.com/blog/)
+
 ## Cheatsheets
 
 -   medium.com/responsibleml/data-visualization-cheat-sheets-1c12ba8a7671

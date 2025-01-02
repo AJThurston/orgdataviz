@@ -1,4 +1,4 @@
 - source: project
   netlify:
     - id: 2aece39e-93e6-464e-bd2b-fb0399f125fd
-      url: 'https://orgdataviz.com'
+      url: https://orgdataviz.com

@@ -14,13 +14,20 @@ book:
   chapters:
     - index.qmd
     - intro/index.qmd
-    - time/index.qmd
-    - categories/index.qmd
-    - reldescrib/index.qmd
-    - relexplain/index.qmd
-    - space/index.qmd
-    - interact/index.qmd
-    - context/index.qmd
+    - text: "Time"
+      href: time/index.qmd
+    - text: "Categories"
+      href: categories/index.qmd
+    - text: "Relationships: Descriptive"
+      href: describingrelationships/index.qmd
+    - text: "Relationships: Explanatory"
+      href: explainingrelationships/index.qmd
+    - text: "Space"
+      href: space/index.qmd
+    - text: "Interactive"
+      href: interactive/index.qmd
+    - text: "Context"
+      href: context/index.qmd
     - resources/index.qmd
     - references/index.qmd
   sidebar:
@@ -34,15 +41,17 @@ book:
     type: textbox
 #  downloads: [pdf, epub]
 
-# bibliography: references.bib
+bibliography: references.bib
 
 format:
   html:
     theme:
       light: flatly
       dark: darkly 
+    toc: true
+    toc-expand: 3
   #pdf:
     #documentclass: scrreprt
 
-editor: visual
+editor: source
 

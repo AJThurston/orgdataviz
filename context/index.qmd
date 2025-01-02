@@ -1,9 +1,37 @@
-#  Contextual Considerations
+# Contextual Considerations
 
-This is a book created from markdown and executable code.
+### Accessibility
 
-See @knuth84 for additional discussion of literate programming.
+Here's a bunch of links on accessibility I got from Harvard: https://accessibility.huit.harvard.edu/data-viz-charts-graphs - [Technique: Describing graphs](https://accessibility.huit.harvard.edu/technique-describing-graphs) - [10 Guidelines for DataViz Accessibility – Highcharts](https://www.highcharts.com/blog/tutorials/10-guidelines-for-dataviz-accessibility/) - [An intro to designing accessible data visualizations by Sarah L. Fossheim](https://fossheim.io/writing/posts/accessible-dataviz-design/)  - [5 easy ways to make your data visualization more accessible](https://www.storytellingwithdata.com/blog/2018/6/26/accessible-data-viz-is-better-data-viz) - [Accessibility Considerations in Data Visualization Design](https://keen.io/blog/accessibility-in-data-vis/) - [How to make charts and graphs more accessible – Pope Tech](https://blog.pope.tech/2023/08/31/how-to-make-charts-and-graphs-more-accessible/) - The language used to describe the data matters - Perceptions of probability: https://github.com/zonination/perceptions \![\[perceptions_of_probability.png\]\] - Cognitive load - Annotations and best practices for data visualization workflows - Ethical, legal, and cultural considerations in data visualization - Accessibility: Colorblindness, ADA, Section 508 compliance - How to make figures and presentations friendly to colorblind people: <https://jfly.uni-koeln.de/color/> - Obake Ito Color Palette: [http://www.cookbook-r.com/Graphs/Colors\_(ggplot2)](http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/#a-colorblind-friendly-palette) - Okabe-Ito (2008) color palette vs. viridis, I like the former for categorical/nominal data vs. viridus which is good for interval or ratio data, a lot of good detail here: <https://stackoverflow.com/questions/57153428/r-plot-color-combinations-that-are-colorblind-accessible> - Alt-text - User centered design/human factors and gathering feedback - Privacy and data security considerations in data visualization - Data visualization isn't just about you visualizing your data but understanding and evaluating other people's visual presentation of data (or sniffing out bad dataviz bullshit)
 
-```{r}
-1 + 1
-```
+### Hosting
+
+-   Figshare: <https://figshare.com/>
+-   Protocols.io: <https://www.protocols.io/>
+-   VizHub is a platform for creating, sharing, and collaborating on interactive data visualizations <https://vizhub.com/>
+
+### Misleading Dataviz
+
+-   Misleading graphs
+    -   Y-axis manipulation, also known as truncation abuse
+    -   Example misleading graph: <https://www.forbes.com/sites/trevorbutterworth/2014/10/02/when-data-journalism-goes-wrong/> 
+    -   https://www.linkedin.com/feed/update/urn:li:activity:7242897321909190656/
+-   From here: x.com/mikebeckhamsm/status/1818798532544917824
+-   Licensure (cc0)
+-   Keeping your code clean with Lintr and Stylr (Nicole Rennie video may have inspired this)
+    -   Tidyverse style guide: https://style.tidyverse.org/index.html
+-   Hosting
+-   Data Management
+    -   Data management slides
+    -   Levels of documentation: <https://x.com/cghlewis/status/1826269873875345875>
+    -   [Codebook comparisons - Crystal Lewis](https://cghlewis.github.io/codebook-pkg-comparison/)
+
+### Bad Dataviz
+
+-   Long list of bad examples: https://x.com/mpfix1/status/1828109846912372940
+-   Another long list of bad examples: https://www.statisticshowto.com/probability-and-statistics/descriptive-statistics/misleading-graphs/
+-   How charts can inadvertently mislead: https://www.asimov.press/p/charts
+-   [linkedin.com/posts/gregdata_data-dataliteracy-activity-7228710352056659968-Rl9e](http://www.linkedin.com/posts/gregdata_data-dataliteracy-activity-7228710352056659968-Rl9e)
+-   <https://x.com/chendabo/status/1799614807878095359>
+-   x.com/cremieuxrecueil/status/1825934608137072826
+-   https://www.businessinsider.com/paul-krugman-inflation-chart-food-energy-gas-housing-prices-economy-2023-10

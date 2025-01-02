@@ -1,9 +1,16 @@
 # Visualizing Space
 
-This is a book created from markdown and executable code.
-
-See @knuth84 for additional discussion of literate programming.
-
-```{r}
-1 + 1
-```
+### Maps
+- [YouTube: RealLifeLore: The Coastline Paradox Explained (6 minutes)](https://www.youtube.com/watch?v=kFjq8PX6F7I&t=8s)
+- Making data-based chloropleth and cartogram maps
+- Visualization of zip code, county, state, and country data
+	- I need to teach them about that principal of how you can infinitely divide a coastline.
+- Avoiding other mapping techniques and why
+- Comparison to shapefiles and GIS data
+- Maps with Leafdown
+- [https://cran.r-project.org/web/packages/tricolore/vignettes/choropleth_maps_with_tricolore.html](https://cran.r-project.org/web/packages/tricolore/vignettes/choropleth_maps_with_tricolore.html)
+- Virginia 2021 Gubenatorial Shift
+	- ![[virginia_gubenatorial_2021.png]]
+	- https://www.reuters.com/graphics/USA-ELECTION/VIRGINIA/gkplgdmzavb/
+	- ![[tricolor_ternary_maps.png | 500]]
+	- https://github.com/jschoeley/tricolore

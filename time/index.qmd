@@ -3,6 +3,7 @@ format:
   html:
     toc: true
     toc-expand: 3
+editor: source
 ---
 
 # Visualizing Time
@@ -17,11 +18,21 @@ format:
     -   Key Performance Indicators (KPIs)
 -   Representing cycles and seasonality (seasonal plots, decomposition plots).
 
+### Survival Analysis
+
+### Communicating Uncertainty
+
+```         
+-   538 has a cool way of showing uncertainty "95% of people fall in this band"
+-   ![](/images/fivethirtyeight_confidence_interval.png.png)
+```
+
 ## Categorical Events
 
 ## Waffleplot
-- Visualization of events
-- I recommend for categorical only actually)
+
+-   Visualization of events
+-   I recommend for categorical only actually)
     -   <https://vuorre.com/posts/2016-03-24-github-waffle-plot/>
     -   Cols: months, rows: days
     -   Memento mori plot with 80 years of months
@@ -30,33 +41,30 @@ format:
         -   This one is "bad" because I don't need it broken out by state if the cases do not meaningfully differ by state
         -   I also prefer to use line charts for continuous data on the y-axis
         -   If necessary I would do line charts as facets for each state
-        -   Sinar (2018) suggested length and angle more accurate than color contrast, saturation, or hue in interpretative accuracy 
-
-## Communicating uncertainty
-    -   538 has a cool way of showing uncertainty "95% of people fall in this band"
-    -   ![](/images/fivethirtyeight_confidence_interval.png.png)
-
-## Rank Order Changes
+        -   Sinar (2018) suggested length and angle more accurate than color contrast, saturation, or hue in interpretative accuracy
 
 ### Gantt Charts
 
-### Survival Analysis
+## Rank Order Changes
 
 ### Alluvial Diagrams
--   Visualization of events (e.g., Gantt charts, survival analysis charts).
+
 -   Alluvial diagrams
+-   Sankey diagrams
 
 ### Bump Plot
+
 -   Bump plot for rank order changes over time
     -   [r-graph-gallery.com/package/ggbump.html](https://r-graph-gallery.com/package/ggbump.html)
     -   Sackett et al. 2022 meta-analysis of predictors:
     -   \![\[sackett2022.png \| 500\]\]
 
 ## Forecasting
-- There was a SIOP 2024 talk I attended on this?
-- [Financial Times: Never ever make predictions](https://www.ft.com/content/3e928a47-a6f0-4e0a-9bb4-3e7dbc749ece) [Archive](https://archive.is/EvThB)
+
+-   There was a SIOP 2024 talk I attended on this?
+-   [Financial Times: Never ever make predictions](https://www.ft.com/content/3e928a47-a6f0-4e0a-9bb4-3e7dbc749ece) [Archive](https://archive.is/EvThB)
 
 ![](/images/ft_predictions_parody.png)
 
-- Visualization of seasonality using births, but make something like this but for accidents at work to demonstrate seasonality
-- [Awesome strategies for visualizing changes over time](https://medium.com/@yuanbo.faith/awesome-strategies-to-visualize-change-with-time-f8a7fa8362f2)
+-   Visualization of seasonality using births, but make something like this but for accidents at work to demonstrate seasonality
+-   [Awesome strategies for visualizing changes over time](https://medium.com/@yuanbo.faith/awesome-strategies-to-visualize-change-with-time-f8a7fa8362f2)

@@ -14,7 +14,7 @@
     "href": "index.html#prerequisites",
     "title": "Organizational Data Visualization",
     "section": "Prerequisites",
-    "text": "Prerequisites\nThis course requires a graduate level understanding of psychological statistics and a basic understanding of working with R and the {ggplot2} R package in particular. Specifically, students should have already completed PSYC 601: Applied Data Analysis in Psychology 1 or sought expressed written approval from the instructor in advance of the course.\nStudents are encouraged to have already installed R, R Studio, and Positron. This course from Microsoft is recommended to build basic familiarity with R, the {tidyverse} and {ggplot2} R packages:\n- Microsoft: Explore and analyze data with R (1 hour). Students are encouraged to maintain their code on Github and to familiarize themselves with version control (e.g., git).",
+    "text": "Prerequisites\nThis course requires a graduate level understanding of psychological statistics and a basic understanding of working with R and the {ggplot2} R package in particular. Specifically, students should have already completed PSYC 601: Applied Data Analysis in Psychology 1 or expressed written approval from the instructor in advance of the course.\nStudents are encouraged to have already installed R, R Studio, Positron, Quarto, and Github. This course from Microsoft is recommended to build basic familiarity with R, the {tidyverse} and {ggplot2} R packages:\n- Microsoft: Explore and analyze data with R (1 hour)\\\nStudents are encouraged to maintain their code on Github and to familiarize themselves with version control (e.g., git).",
     "crumbs": [
       "Preface"
     ]
@@ -30,21 +30,21 @@
     ]
   },
   {
-    "objectID": "index.html#course-textbook",
-    "href": "index.html#course-textbook",
+    "objectID": "index.html#textbook",
+    "href": "index.html#textbook",
     "title": "Organizational Data Visualization",
-    "section": "Course Textbook",
-    "text": "Course Textbook\nYau, N. (2024). Visualize This: The flowingdata guide to design, visualization, and statistics second edition. John Wiley and Sons.",
+    "section": "Textbook",
+    "text": "Textbook\nYau, N. (2024). Visualize This: The flowingdata guide to design, visualization, and statistics second edition. John Wiley and Sons.",
     "crumbs": [
       "Preface"
     ]
   },
   {
-    "objectID": "index.html#what-is-organizational-data-visualization",
-    "href": "index.html#what-is-organizational-data-visualization",
+    "objectID": "index.html#what-is-org-dataviz",
+    "href": "index.html#what-is-org-dataviz",
     "title": "Organizational Data Visualization",
-    "section": "What is organizational data visualization?",
-    "text": "What is organizational data visualization?\nData visualization is the communication of numeric information using graphic displays a skill, much like written & oral communication skills. Data visualization can also be art, designed to evoke a feeling or thought. Data visualization typically has two main functions: exploratory visualizations which reveal new patterns & relationships; explanatory visualizations evaluate hypotheses or aid decision-making. Not all data visualization is ODV.\nOrganizational data visualization is the production of visual displays of quantitative data to support organizational decision-making which aims to describe, explain, predict, and change human behavior at work. ODV is not just data visualization as in related technical fields like biology or operational business components like logistics since these focus on non-human behavior (e.g., animals in biology) or behaviors of non-human systems (e.g., supply chain bottlenecks in logistics). ODV is distinct from data art (e.g., &lt;reddit.com/r/dataisbeautiful&gt;) in that the primary purpose of data art is to entertain or for purely aesthetic purposes ODV is ruthlessly useful and simple and should make decisions obvious to stakeholders.",
+    "section": "What is Org Dataviz?",
+    "text": "What is Org Dataviz?\nData visualization is the communication of numeric information using graphic displays a skill, much like written & oral communication skills. Data visualization can also be art, designed to evoke a feeling or thought. Data visualization typically has two main functions: exploratory visualizations which reveal new patterns & relationships; explanatory visualizations evaluate hypotheses or aid decision-making. Not all data visualization is ODV.\nOrganizational data visualization is the production of visual displays of quantitative data to support organizational decision-making which aims to describe, explain, predict, and change human behavior at work. ODV is not just data visualization as in related technical fields like biology or operational business components like logistics since these focus on non-human behavior (e.g., animals in biology) or behaviors of non-human systems (e.g., supply chain bottlenecks in logistics). ODV is distinct from data art (e.g., reddit.com/r/dataisbeautiful) in that the primary purpose of data art is to entertain or for purely aesthetic purposes ODV is ruthlessly useful and simple and should make decisions obvious to stakeholders.",
     "crumbs": [
       "Preface"
     ]
@@ -136,7 +136,57 @@
     "section": "",
     "text": "2.1 Continuous Events",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Visualizing Time</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Time</span>"
+    ]
+  },
+  {
+    "objectID": "time/index.html#continuous-events",
+    "href": "time/index.html#continuous-events",
+    "title": "2  Visualizing Time",
+    "section": "",
+    "text": "2.1.1 Line charts\n\n\n2.1.2 Area charts\n\nChanges over time as ratios: Month over month (MoM), year over year (YoY), etc.\n\nKey Performance Indicators (KPIs)\n\nRepresenting cycles and seasonality (seasonal plots, decomposition plots).\n\n\n\n2.1.3 Survival Analysis\n\n\n2.1.4 Communicating Uncertainty\n-   538 has a cool way of showing uncertainty \"95% of people fall in this band\"\n-   ![](/images/fivethirtyeight_confidence_interval.png.png)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Time</span>"
+    ]
+  },
+  {
+    "objectID": "time/index.html#categorical-events",
+    "href": "time/index.html#categorical-events",
+    "title": "2  Visualizing Time",
+    "section": "2.2 Categorical Events",
+    "text": "2.2 Categorical Events",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Time</span>"
+    ]
+  },
+  {
+    "objectID": "time/index.html#waffleplot",
+    "href": "time/index.html#waffleplot",
+    "title": "2  Visualizing Time",
+    "section": "2.3 Waffleplot",
+    "text": "2.3 Waffleplot\n\nVisualization of events\nI recommend for categorical only actually)\n\nhttps://vuorre.com/posts/2016-03-24-github-waffle-plot/\nCols: months, rows: days\nMemento mori plot with 80 years of months\nhttps://x.com/AlecStapp/status/1826341717467115743/photo/1\n\n\nThis one is “bad” because I don’t need it broken out by state if the cases do not meaningfully differ by state\nI also prefer to use line charts for continuous data on the y-axis\nIf necessary I would do line charts as facets for each state\nSinar (2018) suggested length and angle more accurate than color contrast, saturation, or hue in interpretative accuracy\n\n\n\n\n2.3.1 Gantt Charts",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Time</span>"
+    ]
+  },
+  {
+    "objectID": "time/index.html#rank-order-changes",
+    "href": "time/index.html#rank-order-changes",
+    "title": "2  Visualizing Time",
+    "section": "2.4 Rank Order Changes",
+    "text": "2.4 Rank Order Changes\n\n2.4.1 Alluvial Diagrams\n\nAlluvial diagrams\nSankey diagrams\n\n\n\n2.4.2 Bump Plot\n\nBump plot for rank order changes over time\n\nr-graph-gallery.com/package/ggbump.html\nSackett et al. 2022 meta-analysis of predictors:\n![[sackett2022.png | 500]]",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Time</span>"
+    ]
+  },
+  {
+    "objectID": "time/index.html#forecasting",
+    "href": "time/index.html#forecasting",
+    "title": "2  Visualizing Time",
+    "section": "2.5 Forecasting",
+    "text": "2.5 Forecasting\n\nThere was a SIOP 2024 talk I attended on this?\nFinancial Times: Never ever make predictions Archive\n\n\n\nVisualization of seasonality using births, but make something like this but for accidents at work to demonstrate seasonality\nAwesome strategies for visualizing changes over time",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Time</span>"
     ]
   },
   {
@@ -146,27 +196,107 @@
     "section": "",
     "text": "3.1 Frequencies and Distributions",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Visualizing Categories</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Categories</span>"
     ]
   },
   {
-    "objectID": "reldescrib/index.html",
-    "href": "reldescrib/index.html",
-    "title": "4  Visualizing Relationships I",
+    "objectID": "categories/index.html#frequencies-and-distributions",
+    "href": "categories/index.html#frequencies-and-distributions",
+    "title": "3  Visualizing Categories",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2",
+    "text": "3.1.1 Histograms\n\n\n3.1.2 Density Plot\n\nDemonstrating amounts (e.g., frequencies, distributions bar charts)\n\nBar charts, loading bar chart as whitespace is information as well\nCommunicating the lack of results is just as important as communicating the presence of results. Audiences are predispositioned to want to look for differences, but you must help them understand the MANIFOLD of differences, the larger context, that while there may be 2 differences among 10, the other 8 are not. You’d be surprised how often you need to state this explicitly.\n\n\n\n\n\n3.1.3 Icon array\nIcon arrays are useful alternatives to bar plots because they are empirically better understood by non-technical audiences (Zhang et al. 2018).\n\n\n3.1.4 Jitterplot\n\n\n3.1.5 Targets",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Visualizing Relationships I</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Categories</span>"
     ]
   },
   {
-    "objectID": "relexplain/index.html",
-    "href": "relexplain/index.html",
-    "title": "5  Visualizing Relationships II",
-    "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2",
+    "objectID": "categories/index.html#descriptives-statistics",
+    "href": "categories/index.html#descriptives-statistics",
+    "title": "3  Visualizing Categories",
+    "section": "3.2 Descriptives Statistics",
+    "text": "3.2 Descriptives Statistics\n\n3.2.1 Barplot\n\n\n3.2.2 Box and Whisker Plot\n\nVisualization of descriptive statistics and distributions\nVisualization of IQRs with density and quantiles overlaid\n\n\n\n3.2.3 Raincloud plot\n- Raincloud plots: https://medium.com/@amorimfranchi/raincloud-plots-for-clear-precise-and-efficient-data-communication-4c71d0a37c23 \n- ![[raincoud.png | 500]]\n- ![[dataviz_cpuperformance.png | 500]]",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Visualizing Relationships II</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Categories</span>"
+    ]
+  },
+  {
+    "objectID": "categories/index.html#parts-of-a-whole",
+    "href": "categories/index.html#parts-of-a-whole",
+    "title": "3  Visualizing Categories",
+    "section": "3.3 Parts of a Whole",
+    "text": "3.3 Parts of a Whole\n\n3.3.1 Pie Charts\nDo not make pie charts. They are very common but difficult to resolve as our brains struggle with how to resolve circles and are not adept at determining length from circumference.\nWatch this video to see just how bad our brains are at this:\n\n\n\n\n\n\nFigure 3.1: Which is longer? Credit: Modern Rogue (YouTube: 1 min)\n\n\n\nIf you’re asked to make a pie chart, please show this video to your boss or whoever asked you to make the pie chart. You, too, can join the good fight against pie charts.\nAnother issue is that pie charts are essentially area charts.\n\n\n3.3.2 Knolling\n\n\n3.3.3 Mosiac Plots\n\nOr parts of a whole\n\nWe don’t do pie charts because of this:\n\n\n\nOur brains are not built to process just how long things are around\n\nTricolor/ternary/triangle plot: WSJ: What type of voter are you?\n\nInstagram link\n![[wsj_what_type_voter_ternary.png | 500]]\n![[soil_ternary_plot.png | 500]]\n\nhttps://github.com/jschoeley/tricolore",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Categories</span>"
+    ]
+  },
+  {
+    "objectID": "categories/index.html#appendix",
+    "href": "categories/index.html#appendix",
+    "title": "3  Visualizing Categories",
+    "section": "3.4 Appendix",
+    "text": "3.4 Appendix\n\n\n\n\n\n\nFigure 3.2: Make Beautiful Excel Charts Like The Economist Credit: Leila Gharani (YouTube: 19 minutes)\n\n\n\n\n\n\n\nZhang, D. C., S. Highhouse, M. E. Brooks, and Y. Zhang. 2018. “Communicating the Validity of Structured Job Interviews with Graphical Visual Aids.” International Journal of Selection and Assessment. https://doi.org/10.1111/ijsa.12220.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Categories</span>"
+    ]
+  },
+  {
+    "objectID": "describingrelationships/index.html",
+    "href": "describingrelationships/index.html",
+    "title": "4  Visualizing Relationships: Describing Relationships",
+    "section": "",
+    "text": "4.1 Flowcharts",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Relationships: Descriptive</span>"
+    ]
+  },
+  {
+    "objectID": "describingrelationships/index.html#flowcharts",
+    "href": "describingrelationships/index.html#flowcharts",
+    "title": "4  Visualizing Relationships: Describing Relationships",
+    "section": "",
+    "text": "Mermaid graphs: https://towardsdatascience.com/introduction-to-mermaid-graphs-in-markdown-080d4377cab4",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Relationships: Descriptive</span>"
+    ]
+  },
+  {
+    "objectID": "describingrelationships/index.html#group-differences",
+    "href": "describingrelationships/index.html#group-differences",
+    "title": "4  Visualizing Relationships: Describing Relationships",
+    "section": "4.2 Group Differences",
+    "text": "4.2 Group Differences\n\nEffect sizes here?\n\nCohen’s D\n\n\n\n4.2.1 Dumbbell Plots\n\nDumbbell plot ajthurston.com/dumbbell\n\n\n\n4.2.2 Knolling\n- ajthurston.com/knolling\n- Alternative in Excel: Tables with distributions and barplots\n- Simplified version in Excel: [Don't use regular bar charts! #excel #exceltutorial #exceltips #exceltricks](https://www.youtube.com/shorts/LazuEVXE-DU)\n- In R using gt_plt_dist() and gt_bar_plot(), examples here: &lt;https://themockup.blog/posts/2022-06-13-gtextras-cran/&gt;\n\nBefore and after with Cohen’s U3 (ajthurston.com/u3) Inspired by Alliger (2024):\n\n\n\nEffect sizes (e.g., funnel and forest plots, alternative effect size displays)\n\nCohen’s d\nCommon Language Effect Sizes (CLES)\n\nBinomial effect size display\nCohen’s U3\n\nElasticities",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Relationships: Descriptive</span>"
+    ]
+  },
+  {
+    "objectID": "describingrelationships/index.html#correlation",
+    "href": "describingrelationships/index.html#correlation",
+    "title": "4  Visualizing Relationships: Describing Relationships",
+    "section": "4.3 Correlation",
+    "text": "4.3 Correlation\n\nSimple correlation\n\n\n4.3.1 Scatterplots\n\n\n4.3.2 Correlelogram\n\n\n4.3.3 Ternary plots\n\n\n4.3.4 Upset plots\nVenn diagrams and Ballentine plots.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Relationships: Descriptive</span>"
+    ]
+  },
+  {
+    "objectID": "describingrelationships/index.html#simple-linear-regression",
+    "href": "describingrelationships/index.html#simple-linear-regression",
+    "title": "4  Visualizing Relationships: Describing Relationships",
+    "section": "4.4 Simple linear regression",
+    "text": "4.4 Simple linear regression\n\n4.4.1 Expectancy charts (ajthurston.com/expectancy)\n\n\n4.4.2 Relationship heatmap\n-   &lt;https://x.com/clementychow/status/1831676878471807318&gt;\n-   \\![\\[curseword_heatmap.png \\| 500\\]\\]\n\nGuttman chart, individuals vs. items",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Relationships: Descriptive</span>"
+    ]
+  },
+  {
+    "objectID": "explainingrelationships/index.html",
+    "href": "explainingrelationships/index.html",
+    "title": "5  Visualizing Relationships: Explaining Relationships",
+    "section": "",
+    "text": "5.0.1 Generalized Linear Modeling\n\nLogistic regression\n\nPredicted probabilities ajthurston.com/predprobs\n\nhttp://a.web.umkc.edu/andersonbri/InterpretinglogisticregressionPartII.html\nhttps://info.umkc.edu/drbanderson/interpreting-logistic-regression-part-i/\nhttp://a.web.umkc.edu/andersonbri/Interpretinglogisticregression.html\nlibrary.virginia.edu/data/articles/simulating-a-logistic-regression-model\nhttps://stats.oarc.ucla.edu/r/dae/logit-regression/\n\nClassification accuracy ajthurston.com/accuracy\n\nMultiple correlation\nMultiple regression\nRelative importance/dominance analysis/feature selection\nConnections (e.g., network analysis)\nPolynomial Regression and Response Surface Analysis (PRRSA) (Edwards & Parry, 1993)\n![[response_surface_plots.png | 500]] ### Machine Learning\nVisualization of decision support techniques (e.g., CART/random forests)\nstats.stackexchange.com/questions/467697/visualizing-regression-with-categorical-variables ### Networks\nTED: A visual history of human knowledge - Manuel Lima (13 minutes)\n\nDon’t do radial convergence\nDon’t do arc diagrams",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Relationships: Explanatory</span>"
     ]
   },
   {
@@ -174,19 +304,19 @@
     "href": "space/index.html",
     "title": "6  Visualizing Space",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2",
+    "text": "6.0.1 Maps\n\nYouTube: RealLifeLore: The Coastline Paradox Explained (6 minutes)\nMaking data-based chloropleth and cartogram maps\nVisualization of zip code, county, state, and country data\n\nI need to teach them about that principal of how you can infinitely divide a coastline.\n\nAvoiding other mapping techniques and why\nComparison to shapefiles and GIS data\nMaps with Leafdown\nhttps://cran.r-project.org/web/packages/tricolore/vignettes/choropleth_maps_with_tricolore.html\nVirginia 2021 Gubenatorial Shift\n\n![[virginia_gubenatorial_2021.png]]\nhttps://www.reuters.com/graphics/USA-ELECTION/VIRGINIA/gkplgdmzavb/\n![[tricolor_ternary_maps.png | 500]]\nhttps://github.com/jschoeley/tricolore",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Visualizing Space</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Space</span>"
     ]
   },
   {
-    "objectID": "interact/index.html",
-    "href": "interact/index.html",
+    "objectID": "interactive/index.html",
+    "href": "interactive/index.html",
     "title": "7  Interactive Visualization",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2",
+    "text": "Exposure to PowerBI, datawrappers, and advanced programming (e.g., D3.js)\nHosting interactive tools (e.g., Github Pages, Netlify)\nServerless apps with shiny live: https://youtu.be/RcwvG7dtMqU\nAutomation of Quarto and Github pages: https://www.youtube.com/watch?v=arzBRW5XIkg\nLearn D3.js: Data Visualization using r2D3: R Interface to D3 Visualizations\n[An introduction to d3.js in 10 basic examples](https://d3-graph-gallery.com/intro_d3js.html\nI don’t know if D3.js is all that worth it for a little bit of interactivity/animation\n\n\n7.0.1 Dashboards\n\nInteractive dashboards/minimum via products using R Shiny\nMastering Dashboard Design: From Good to Unmissable Data Visualizations Archive\n\n\n\n7.0.2 Interactive\n\nBrown University - Seeing Theory\nInteractive maps with Leafdown\nScrollytelling: https://georgios.quarto.pub/a-visual-journey-through-world-exhibitions/\nScrollytelling tutorial: https://x.com/RosanaFerrero/status/1827224441312444629\nScrollytelling R package: https://closeread.dev\n\n\n\n7.0.3 Animations\n\nDon’t have animations playing in the background of your talks as our eyes are drawn to movement\nUsing gganimate for animated data visualizations\ngganimate does not play nice with expression()\nScrollytelling (closeread.dev) is an animation of sorts\nTED: The best stats you’ve ever seen - Hans Rolling (20 minutes)\n\n“Data is often better than you think”\n“The differences are much bigger than the weakness of the data”\n“If you look at the average data of the countries – they are like this. That’s dangerous to use average data, because there is such a lot of difference within countries.”\n“The improvement of the world must be highly contextualized”",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Interactive Visualization</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Interactive</span>"
     ]
   },
   {
@@ -194,9 +324,9 @@
     "href": "context/index.html",
     "title": "8  Contextual Considerations",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2",
+    "text": "8.0.1 Accessibility\nHere’s a bunch of links on accessibility I got from Harvard: https://accessibility.huit.harvard.edu/data-viz-charts-graphs - Technique: Describing graphs - 10 Guidelines for DataViz Accessibility – Highcharts - An intro to designing accessible data visualizations by Sarah L. Fossheim  - 5 easy ways to make your data visualization more accessible - Accessibility Considerations in Data Visualization Design - How to make charts and graphs more accessible – Pope Tech - The language used to describe the data matters - Perceptions of probability: https://github.com/zonination/perceptions ![[perceptions_of_probability.png]] - Cognitive load - Annotations and best practices for data visualization workflows - Ethical, legal, and cultural considerations in data visualization - Accessibility: Colorblindness, ADA, Section 508 compliance - How to make figures and presentations friendly to colorblind people: https://jfly.uni-koeln.de/color/ - Obake Ito Color Palette: http://www.cookbook-r.com/Graphs/Colors_(ggplot2) - Okabe-Ito (2008) color palette vs. viridis, I like the former for categorical/nominal data vs. viridus which is good for interval or ratio data, a lot of good detail here: https://stackoverflow.com/questions/57153428/r-plot-color-combinations-that-are-colorblind-accessible - Alt-text - User centered design/human factors and gathering feedback - Privacy and data security considerations in data visualization - Data visualization isn’t just about you visualizing your data but understanding and evaluating other people’s visual presentation of data (or sniffing out bad dataviz bullshit)\n\n\n8.0.2 Hosting\n\nFigshare: https://figshare.com/\nProtocols.io: https://www.protocols.io/\nVizHub is a platform for creating, sharing, and collaborating on interactive data visualizations https://vizhub.com/\n\n\n\n8.0.3 Misleading Dataviz\n\nMisleading graphs\n\nY-axis manipulation, also known as truncation abuse\nExample misleading graph: https://www.forbes.com/sites/trevorbutterworth/2014/10/02/when-data-journalism-goes-wrong/ \nhttps://www.linkedin.com/feed/update/urn:li:activity:7242897321909190656/\n\nFrom here: x.com/mikebeckhamsm/status/1818798532544917824\nLicensure (cc0)\nKeeping your code clean with Lintr and Stylr (Nicole Rennie video may have inspired this)\n\nTidyverse style guide: https://style.tidyverse.org/index.html\n\nHosting\nData Management\n\nData management slides\nLevels of documentation: https://x.com/cghlewis/status/1826269873875345875\nCodebook comparisons - Crystal Lewis\n\n\n\n\n8.0.4 Bad Dataviz\n\nLong list of bad examples: https://x.com/mpfix1/status/1828109846912372940\nAnother long list of bad examples: https://www.statisticshowto.com/probability-and-statistics/descriptive-statistics/misleading-graphs/\nHow charts can inadvertently mislead: https://www.asimov.press/p/charts\nlinkedin.com/posts/gregdata_data-dataliteracy-activity-7228710352056659968-Rl9e\nhttps://x.com/chendabo/status/1799614807878095359\nx.com/cremieuxrecueil/status/1825934608137072826\nhttps://www.businessinsider.com/paul-krugman-inflation-chart-food-energy-gas-housing-prices-economy-2023-10",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Contextual Considerations</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Context</span>"
     ]
   },
   {
@@ -215,6 +345,16 @@
     "title": "Resources",
     "section": "",
     "text": "Big Book of R\nGraphic methods for presenting facts - Willard C. Brinton\nFundamentals of Data Visualization - Claus O. Wilke\nHow Charts Lie - Alberto Cairo\nThe Visual Display of Quantitative Information - Edward R. Tufte\nEnvisioning Information - Edward R. Tufte\nData Visualization: A Practical Introduction - Kieran Healy\nFactfulness - Hans Rosling\nThe Truthful Art: Data, Charts, and Maps for Communication - Alberto Cairo\nCalling Bullshit: The Art of Skepticism in a Data-Driven World - Carl T. Bergstrom and Jevin D. West\nHow to Lie with Statistics - Darrell Huff\n\nCensus: 19 chances out of 20 the figures have a degree of precision\nGiselle’s norms\nNormal != desirable\nArmchair correspondent\nHow they use language to couch statistics, over 3/4 have power available, available is not powered\nWhat is probable error and why is it no longer used\nWhen numbers in tabular form are taboo and words will not do the work well. as is often the case. there is one answer left: Draw a picture.\nBeware of pictographs with disproportionate widths/volumes\nSuspiciously precise\nClear weather is more dangerous that foggy weather\nSafer to be in the Navy than NYC\nHave students go to spurious correlation website\nThe darkening shadow first national bank of Boston and Newsweek\nShifting percentages based on different bases. %lift as a percent of before or after. To offset a pay cut of 50%, you need a raise of 100%\nPercent, percentage point, percentile\nStatistics is as much art as it is practice\n\nWeapons of Math Destruction - Cathy O’Neil\nThe Data Detective - Tim Harford\nMay Contain Lies\n\nKnowing is have the battle, so even with the knowledge, we’re only halfway there\n\nHarvard ebook: Intro to Data Science: Intro to Data Visualization\nVisual Complexity: Mapping Patter of Information - Manual Lima",
+    "crumbs": [
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources/index.html#blogs",
+    "href": "resources/index.html#blogs",
+    "title": "Resources",
+    "section": "Blogs",
+    "text": "Blogs\n\nKrisztina Szucs’ blog",
     "crumbs": [
       "Resources"
     ]
@@ -300,123 +440,13 @@
     ]
   },
   {
-    "objectID": "index.html#what-is-org-dataviz",
-    "href": "index.html#what-is-org-dataviz",
-    "title": "Organizational Data Visualization",
-    "section": "What is Org Dataviz?",
-    "text": "What is Org Dataviz?\nData visualization is the communication of numeric information using graphic displays a skill, much like written & oral communication skills. Data visualization can also be art, designed to evoke a feeling or thought. Data visualization typically has two main functions: exploratory visualizations which reveal new patterns & relationships; explanatory visualizations evaluate hypotheses or aid decision-making. Not all data visualization is ODV.\nOrganizational data visualization is the production of visual displays of quantitative data to support organizational decision-making which aims to describe, explain, predict, and change human behavior at work. ODV is not just data visualization as in related technical fields like biology or operational business components like logistics since these focus on non-human behavior (e.g., animals in biology) or behaviors of non-human systems (e.g., supply chain bottlenecks in logistics). ODV is distinct from data art (e.g., reddit.com/r/dataisbeautiful) in that the primary purpose of data art is to entertain or for purely aesthetic purposes ODV is ruthlessly useful and simple and should make decisions obvious to stakeholders.",
-    "crumbs": [
-      "Preface"
-    ]
-  },
-  {
-    "objectID": "time/index.html#time-and-trends",
-    "href": "time/index.html#time-and-trends",
-    "title": "2  Visualizing Time",
+    "objectID": "references/index.html",
+    "href": "references/index.html",
+    "title": "References",
     "section": "",
-    "text": "2.1.1 Line charts\n\n\n2.1.2 Area charts\n\nChanges over time as ratios: Month over month (MoM), year over year (YoY), etc.\n\nKey Performance Indicators (KPIs)\n\nRepresenting cycles and seasonality (seasonal plots, decomposition plots).",
+    "text": "Zhang, D. C., S. Highhouse, M. E. Brooks, and Y. Zhang. 2018.\n“Communicating the Validity of Structured Job Interviews with\nGraphical Visual Aids.” International Journal of Selection\nand Assessment. https://doi.org/10.1111/ijsa.12220.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Visualizing Time</span>"
-    ]
-  },
-  {
-    "objectID": "time/index.html#rank-and-order",
-    "href": "time/index.html#rank-and-order",
-    "title": "2  Visualizing Time",
-    "section": "2.5 Rank and Order",
-    "text": "2.5 Rank and Order\n\n2.5.1 Alluvial Diagrams\n\nVisualization of events (e.g., Gantt charts, survival analysis charts).\nAlluvial diagrams\n\n\n\n2.5.2 Bump Plot\n\nBump plot for rank order changes over time\n\nr-graph-gallery.com/package/ggbump.html\nSackett et al. 2022 meta-analysis of predictors:\n![[sackett2022.png | 500]]",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Visualizing Time</span>"
-    ]
-  },
-  {
-    "objectID": "time/index.html#area-charts",
-    "href": "time/index.html#area-charts",
-    "title": "2  Visualizing Time",
-    "section": "2.2 Area charts",
-    "text": "2.2 Area charts\n\nChanges over time as ratios: Month over month (MoM), year over year (YoY), etc.\n\nKey Performance Indicators (KPIs)\n\nRepresenting cycles and seasonality (seasonal plots, decomposition plots). ## Forecasting\n\nThere was a SIOP 2024 talk I attended on this?\nFinancial Times: Never ever make predictions Archive\n\n\n\n\nVisualization of seasonality using births, but make something like this but for accidents at work to demonstrate seasonality\nAwesome strategies for visualizing changes over time ## Waffleplot\nVisualization of events\nI recommend for categorical only actually)\n\nhttps://vuorre.com/posts/2016-03-24-github-waffle-plot/\nCols: months, rows: days\nMemento mori plot with 80 years of months\nhttps://x.com/AlecStapp/status/1826341717467115743/photo/1\n\n\nThis one is “bad” because I don’t need it broken out by state if the cases do not meaningfully differ by state\nI also prefer to use line charts for continuous data on the y-axis\nIf necessary I would do line charts as facets for each state\nSinar (2018) suggested length and angle more accurate than color contrast, saturation, or hue in interpretative accuracy ### Communicating Uncertainty ## Communicating uncertainty\n\n538 has a cool way of showing uncertainty “95% of people fall in this band”",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Visualizing Time</span>"
-    ]
-  },
-  {
-    "objectID": "time/index.html#forecasting",
-    "href": "time/index.html#forecasting",
-    "title": "2  Visualizing Time",
-    "section": "2.6 Forecasting",
-    "text": "2.6 Forecasting\n\nThere was a SIOP 2024 talk I attended on this?\nFinancial Times: Never ever make predictions Archive\n\n\n\nVisualization of seasonality using births, but make something like this but for accidents at work to demonstrate seasonality\nAwesome strategies for visualizing changes over time",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Visualizing Time</span>"
-    ]
-  },
-  {
-    "objectID": "time/index.html#waffleplot",
-    "href": "time/index.html#waffleplot",
-    "title": "2  Visualizing Time",
-    "section": "2.3 Waffleplot",
-    "text": "2.3 Waffleplot\n\nVisualization of events\nI recommend for categorical only actually)\n\nhttps://vuorre.com/posts/2016-03-24-github-waffle-plot/\nCols: months, rows: days\nMemento mori plot with 80 years of months\nhttps://x.com/AlecStapp/status/1826341717467115743/photo/1\n\n\nThis one is “bad” because I don’t need it broken out by state if the cases do not meaningfully differ by state\nI also prefer to use line charts for continuous data on the y-axis\nIf necessary I would do line charts as facets for each state\nSinar (2018) suggested length and angle more accurate than color contrast, saturation, or hue in interpretative accuracy",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Visualizing Time</span>"
-    ]
-  },
-  {
-    "objectID": "time/index.html#communicating-uncertainty",
-    "href": "time/index.html#communicating-uncertainty",
-    "title": "2  Visualizing Time",
-    "section": "2.4 Communicating uncertainty",
-    "text": "2.4 Communicating uncertainty\n-   538 has a cool way of showing uncertainty \"95% of people fall in this band\"\n-   ![](/images/fivethirtyeight_confidence_interval.png.png)",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Visualizing Time</span>"
-    ]
-  },
-  {
-    "objectID": "time/index.html#continuous-events",
-    "href": "time/index.html#continuous-events",
-    "title": "2  Visualizing Time",
-    "section": "",
-    "text": "2.1.1 Line charts\n\n\n2.1.2 Area charts\n\nChanges over time as ratios: Month over month (MoM), year over year (YoY), etc.\n\nKey Performance Indicators (KPIs)\n\nRepresenting cycles and seasonality (seasonal plots, decomposition plots).",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Visualizing Time</span>"
-    ]
-  },
-  {
-    "objectID": "time/index.html#categorical-events",
-    "href": "time/index.html#categorical-events",
-    "title": "2  Visualizing Time",
-    "section": "2.2 Categorical Events",
-    "text": "2.2 Categorical Events",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Visualizing Time</span>"
-    ]
-  },
-  {
-    "objectID": "time/index.html#rank-order-changes",
-    "href": "time/index.html#rank-order-changes",
-    "title": "2  Visualizing Time",
-    "section": "2.5 Rank Order Changes",
-    "text": "2.5 Rank Order Changes\n\n2.5.1 Gantt Charts\n\n\n2.5.2 Survival Analysis\n\n\n2.5.3 Alluvial Diagrams\n\nVisualization of events (e.g., Gantt charts, survival analysis charts).\nAlluvial diagrams\n\n\n\n2.5.4 Bump Plot\n\nBump plot for rank order changes over time\n\nr-graph-gallery.com/package/ggbump.html\nSackett et al. 2022 meta-analysis of predictors:\n![[sackett2022.png | 500]]",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Visualizing Time</span>"
-    ]
-  },
-  {
-    "objectID": "categories/index.html#frequencies-and-distributions",
-    "href": "categories/index.html#frequencies-and-distributions",
-    "title": "3  Visualizing Categories",
-    "section": "",
-    "text": "3.1.1 Histograms\n\n\n3.1.2 Density Plot\n\nDemonstrating amounts (e.g., frequencies, distributions bar charts)\n\nBar charts, loading bar chart as whitespace is information as well\nCommunicating the lack of results is just as important as communicating the presence of results. Audiences are predispositioned to want to look for differences, but you must help them understand the MANIFOLD of differences, the larger context, that while there may be 2 differences among 10, the other 8 are not. You’d be surprised how often you need to state this explicitly.\n![[apple_performance.png]]\n\n\n\n\n3.1.3 Icon array\n- Zhang article here\n\n\n3.1.4 Jitterplot\n\nYouTube: Leila Gharani: Make Beautiful Excel Charts Like The Economist (file included) (19 minutes)\n\n\n\n3.1.5 Targets\n- ![[targets_eds.png | 500]]",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Visualizing Categories</span>"
-    ]
-  },
-  {
-    "objectID": "categories/index.html#descriptives-statistics",
-    "href": "categories/index.html#descriptives-statistics",
-    "title": "3  Visualizing Categories",
-    "section": "3.2 Descriptives Statistics",
-    "text": "3.2 Descriptives Statistics\n\nVisualization of descriptive statistics and distributions\nVisualization of IQRs with density and quantiles overlaid\n\n\n3.2.1 Raincloud plot\n- Raincloud plots: https://medium.com/@amorimfranchi/raincloud-plots-for-clear-precise-and-efficient-data-communication-4c71d0a37c23 \n- ![[raincoud.png | 500]]\n- ![[dataviz_cpuperformance.png | 500]]\n\n\n3.2.2 Parts of a Whole\n\nOr parts of a whole\nWe don’t do pie charts because of this: https://www.youtube.com/shorts/4kxI4EjL3rg\n\nOur brains are not built to process just how long things are around\n\nTricolor/ternary/triangle plot: WSJ: What type of voter are you?\n\nInstagram link\n![[wsj_what_type_voter_ternary.png | 500]]\n![[soil_ternary_plot.png | 500]]\n\nhttps://github.com/jschoeley/tricolore",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Visualizing Categories</span>"
+      "References"
     ]
   }
 ]

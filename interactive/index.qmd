@@ -1,0 +1,34 @@
+# Interactive Visualization
+
+- Exposure to PowerBI, datawrappers, and advanced programming (e.g., D3.js)
+- Hosting interactive tools (e.g., Github Pages, Netlify)
+- Serverless apps with shiny live: [https://youtu.be/RcwvG7dtMqU](https://youtu.be/RcwvG7dtMqU)
+- Automation of Quarto and Github pages: [https://www.youtube.com/watch?v=arzBRW5XIkg](https://www.youtube.com/watch?v=arzBRW5XIkg)
+- Learn D3.js: [Data Visualization using r2D3: R Interface to D3 Visualizations](https://www.youtube.com/watch?v=EjI7QbPPGFs)
+- [An introduction to d3.js in 10 basic examples](https://d3-graph-gallery.com/intro_d3js.html
+- I don't know if D3.js is all that worth it for a little bit of interactivity/animation
+
+### Dashboards
+
+- Interactive dashboards/minimum via products using R Shiny
+- [Mastering Dashboard Design: From Good to Unmissable Data Visualizations](https://medium.com/@tjdus92422/mastering-dashboard-design-from-good-to-unmissable-data-visualizations-e3a1b5ee108a) [Archive](https://archive.is/GXXwA)
+
+### Interactive
+
+- [Brown University - Seeing Theory](https://seeing-theory.brown.edu/)
+- Interactive maps with Leafdown
+- Scrollytelling: https://georgios.quarto.pub/a-visual-journey-through-world-exhibitions/
+- Scrollytelling tutorial: https://x.com/RosanaFerrero/status/1827224441312444629
+- Scrollytelling R package: https://closeread.dev
+
+### Animations
+
+- Don’t have animations playing in the background of your talks as our eyes are drawn to movement
+- Using gganimate for animated data visualizations
+- gganimate does not play nice with expression()
+- Scrollytelling (closeread.dev) is an animation of sorts
+- [TED: The best stats you've ever seen - Hans Rolling (20 minutes)](https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen?subtitle=en)
+	- "Data is often better than you think"
+	- "The differences are much bigger than the weakness of the data"
+	- "If you look at the average data of the countries -- they are like this. That's dangerous to use average data, because there is such a lot of difference within countries."
+	- "The improvement of the world must be highly contextualized"

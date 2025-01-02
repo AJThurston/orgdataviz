@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Resources – Organizational Data Visualization</title>
+<title>4&nbsp; Visualizing Relationships: Describing Relationships – Organizational Data Visualization</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../references/index.html" rel="next">
-<link href="../context/index.html" rel="prev">
+<link href="../explainingrelationships/index.html" rel="next">
+<link href="../categories/index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/index.html">Resources</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../describingrelationships/index.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Relationships: Descriptive</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -141,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../describingrelationships/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../describingrelationships/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Relationships: Descriptive</span></span></a>
   </div>
 </li>
@@ -171,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../resources/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Resources</span></a>
   </div>
 </li>
@@ -191,16 +191,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#books" id="toc-books" class="nav-link active" data-scroll-target="#books">Books</a></li>
-  <li><a href="#blogs" id="toc-blogs" class="nav-link" data-scroll-target="#blogs">Blogs</a></li>
-  <li><a href="#cheatsheets" id="toc-cheatsheets" class="nav-link" data-scroll-target="#cheatsheets">Cheatsheets</a></li>
-  <li><a href="#courses" id="toc-courses" class="nav-link" data-scroll-target="#courses">Courses</a></li>
-  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets">Datasets</a></li>
-  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary">Glossary</a></li>
-  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a></li>
-  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
-  <li><a href="#videos" id="toc-videos" class="nav-link" data-scroll-target="#videos">Videos</a></li>
-  <li><a href="#random" id="toc-random" class="nav-link" data-scroll-target="#random">Random</a></li>
+  <li><a href="#flowcharts" id="toc-flowcharts" class="nav-link active" data-scroll-target="#flowcharts"><span class="header-section-number">4.1</span> Flowcharts</a></li>
+  <li><a href="#group-differences" id="toc-group-differences" class="nav-link" data-scroll-target="#group-differences"><span class="header-section-number">4.2</span> Group Differences</a>
+  <ul class="collapse">
+  <li><a href="#dumbbell-plots" id="toc-dumbbell-plots" class="nav-link" data-scroll-target="#dumbbell-plots"><span class="header-section-number">4.2.1</span> Dumbbell Plots</a></li>
+  <li><a href="#knolling" id="toc-knolling" class="nav-link" data-scroll-target="#knolling"><span class="header-section-number">4.2.2</span> Knolling</a></li>
+  </ul></li>
+  <li><a href="#correlation" id="toc-correlation" class="nav-link" data-scroll-target="#correlation"><span class="header-section-number">4.3</span> Correlation</a>
+  <ul class="collapse">
+  <li><a href="#scatterplots" id="toc-scatterplots" class="nav-link" data-scroll-target="#scatterplots"><span class="header-section-number">4.3.1</span> Scatterplots</a></li>
+  <li><a href="#correlelogram" id="toc-correlelogram" class="nav-link" data-scroll-target="#correlelogram"><span class="header-section-number">4.3.2</span> Correlelogram</a></li>
+  <li><a href="#ternary-plots" id="toc-ternary-plots" class="nav-link" data-scroll-target="#ternary-plots"><span class="header-section-number">4.3.3</span> Ternary plots</a></li>
+  <li><a href="#upset-plots" id="toc-upset-plots" class="nav-link" data-scroll-target="#upset-plots"><span class="header-section-number">4.3.4</span> Upset plots</a></li>
+  </ul></li>
+  <li><a href="#simple-linear-regression" id="toc-simple-linear-regression" class="nav-link" data-scroll-target="#simple-linear-regression"><span class="header-section-number">4.4</span> Simple linear regression</a>
+  <ul class="collapse">
+  <li><a href="#expectancy-charts-ajthurston.comexpectancy" id="toc-expectancy-charts-ajthurston.comexpectancy" class="nav-link" data-scroll-target="#expectancy-charts-ajthurston.comexpectancy"><span class="header-section-number">4.4.1</span> Expectancy charts (ajthurston.com/expectancy)</a></li>
+  <li><a href="#relationship-heatmap" id="toc-relationship-heatmap" class="nav-link" data-scroll-target="#relationship-heatmap"><span class="header-section-number">4.4.2</span> Relationship heatmap</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -209,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Resources</h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Visualizing Relationships: Describing Relationships</span></h1>
 </div>
 
 
@@ -226,170 +234,84 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="books" class="level2">
-<h2 class="anchored" data-anchor-id="books">Books</h2>
+<section id="flowcharts" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="flowcharts"><span class="header-section-number">4.1</span> Flowcharts</h2>
 <ul>
-<li><a href="https://www.bigbookofr.com/">Big Book of R</a></li>
-<li><a href="https://archive.org/details/graphicmethodsfo00brinrich">Graphic methods for presenting facts - Willard C. Brinton</a></li>
-<li><a href="https://clauswilke.com/dataviz">Fundamentals of Data Visualization - Claus O. Wilke</a></li>
-<li><a href="https://www.amazon.com/How-Charts-Lie-Getting-Graphs/dp/1324001569">How Charts Lie - Alberto Cairo</a></li>
-<li><a href="https://www.amazon.com/Visual-Display-Quantitative-Information/dp/096139214">The Visual Display of Quantitative Information - Edward R. Tufte</a></li>
-<li><a href="https://www.amazon.com/Envisioning-Information-Edward-R-Tufte/dp/0961392118">Envisioning Information - Edward R. Tufte</a></li>
-<li><a href="https://www.amazon.com/Data-Visualization-Practical-Introduction/dp/069118162X">Data Visualization: A Practical Introduction - Kieran Healy</a></li>
-<li><a href="https://www.amazon.com/Factfulness-Reasons-World-Things-Better/dp/1250107814">Factfulness - Hans Rosling</a></li>
-<li><a href="https://www.amazon.com/Truthful-Art-Charts-Maps-Communication/dp/0321934075">The Truthful Art: Data, Charts, and Maps for Communication - Alberto Cairo</a></li>
-<li><a href="https://www.amazon.com/Calling-Bullshit-Skepticism-Data-Driven-World/dp/0525509186">Calling Bullshit: The Art of Skepticism in a Data-Driven World - Carl T. Bergstrom and Jevin D. West</a></li>
-<li><a href="https://www.amazon.com/How-Lie-Statistics-Darrell-Huff/dp/0393310728">How to Lie with Statistics - Darrell Huff</a>
+<li>Mermaid graphs: <a href="https://towardsdatascience.com/introduction-to-mermaid-graphs-in-markdown-080d4377cab4" class="uri">https://towardsdatascience.com/introduction-to-mermaid-graphs-in-markdown-080d4377cab4</a></li>
+</ul>
+</section>
+<section id="group-differences" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="group-differences"><span class="header-section-number">4.2</span> Group Differences</h2>
 <ul>
-<li>Census: 19 chances out of 20 the figures have a degree of precision</li>
-<li>Giselle’s norms</li>
-<li>Normal != desirable</li>
-<li>Armchair correspondent</li>
-<li>How they use language to couch statistics, over 3/4 have power available, available is not powered</li>
-<li>What is probable error and why is it no longer used</li>
-<li>When numbers in tabular form are taboo and words will not do the work well. as is often the case. there is one answer left: Draw a picture.</li>
-<li>Beware of pictographs with disproportionate widths/volumes</li>
-<li>Suspiciously precise</li>
-<li>Clear weather is more dangerous that foggy weather</li>
-<li>Safer to be in the Navy than NYC</li>
-<li>Have students go to spurious correlation website</li>
-<li>The darkening shadow first national bank of Boston and Newsweek</li>
-<li>Shifting percentages based on different bases. %lift as a percent of before or after. To offset a pay cut of 50%, you need a raise of 100%</li>
-<li>Percent, percentage point, percentile</li>
-<li>Statistics is as much art as it is practice</li>
+<li>Effect sizes here?
+<ul>
+<li>Cohen’s D</li>
 </ul></li>
-<li><a href="https://www.amazon.com/Weapons-Math-Destruction-Increases-Inequality/dp/0553418815">Weapons of Math Destruction - Cathy O’Neil</a></li>
-<li><a href="https://www.amazon.com/Data-Detective-Easy-Rules-Statistics/dp/0593084595">The Data Detective - Tim Harford</a></li>
-<li><a href="https://www.amazon.com/May-Contain-Lies-Statistics-Biases_And/dp/0520405854">May Contain Lies</a>
+</ul>
+<section id="dumbbell-plots" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="dumbbell-plots"><span class="header-section-number">4.2.1</span> Dumbbell Plots</h3>
 <ul>
-<li>Knowing is have the battle, so even with the knowledge, we’re only halfway there</li>
+<li>Dumbbell plot ajthurston.com/dumbbell</li>
+</ul>
+</section>
+<section id="knolling" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="knolling"><span class="header-section-number">4.2.2</span> Knolling</h3>
+<pre><code>- ajthurston.com/knolling
+- Alternative in Excel: Tables with distributions and barplots
+- Simplified version in Excel: [Don't use regular bar charts! #excel #exceltutorial #exceltips #exceltricks](https://www.youtube.com/shorts/LazuEVXE-DU)
+- In R using gt_plt_dist() and gt_bar_plot(), examples here: &lt;https://themockup.blog/posts/2022-06-13-gtextras-cran/&gt;</code></pre>
+<ul>
+<li>Before and after with Cohen’s U3 (ajthurston.com/u3) Inspired by Alliger (2024):</li>
+</ul>
+<p><img src="../images/cohens_u3_distributions.png" class="img-fluid"></p>
+<ul>
+<li>Effect sizes (e.g., funnel and forest plots, alternative effect size displays)
+<ul>
+<li>Cohen’s d</li>
+<li>Common Language Effect Sizes (CLES)
+<ul>
+<li>Binomial effect size display</li>
+<li>Cohen’s U3</li>
 </ul></li>
-<li><a href="https://rafalab.dfci.harvard.edu/dsbook-part-1/dataviz/ggplot2.html">Harvard ebook: Intro to Data Science: Intro to Data Visualization</a></li>
-<li><a href="https://www.amazon.com/Visual-Complexity-Mapping-Patterns-Information/dp/1616892196">Visual Complexity: Mapping Patter of Information - Manual Lima</a></li>
-</ul>
-</section>
-<section id="blogs" class="level2">
-<h2 class="anchored" data-anchor-id="blogs">Blogs</h2>
-<ul>
-<li><a href="https://krisztinaszucs.com/blog/">Krisztina Szucs’ blog</a></li>
-</ul>
-</section>
-<section id="cheatsheets" class="level2">
-<h2 class="anchored" data-anchor-id="cheatsheets">Cheatsheets</h2>
-<ul>
-<li>medium.com/responsibleml/data-visualization-cheat-sheets-1c12ba8a7671</li>
-<li>Posit cheat sheets: <a href="https://posit.co/resources/cheatsheets/" class="uri">https://posit.co/resources/cheatsheets/</a></li>
-<li>Ggplot2 data visualization cheat sheet: <a href="https://rstudio.github.io/cheatsheets/data-visualization.pdf" class="uri">https://rstudio.github.io/cheatsheets/data-visualization.pdf</a></li>
-<li>Data Viz cheat sheet: <a href="https://s3.amazonaws.com/assets.datacamp.com/email/other/Data+Visualizations+-+DataCamp.pdf" class="uri">https://s3.amazonaws.com/assets.datacamp.com/email/other/Data+Visualizations+-+DataCamp.pdf</a></li>
-<li>Core principles of datavis: <a href="https://policyviz.com/wp-content/uploads/2018/08/PolicyViz-DataViz-Cheatsheet.pdf" class="uri">https://policyviz.com/wp-content/uploads/2018/08/PolicyViz-DataViz-Cheatsheet.pdf</a></li>
-</ul>
-</section>
-<section id="courses" class="level2">
-<h2 class="anchored" data-anchor-id="courses">Courses</h2>
-<ul>
-<li>UC Berkley: Visualization enhances exploratory analysis as well as efficient communication of data results. This course focuses on the design of visual representations of data in order to discover patterns, answer questions, convey findings, drive decisions, and provide persuasive evidence. The goal is to give you the practical knowledge you need to create effective tools for both exploring and explaining your data. Exercises throughout the course provide a hands-on experience using relevant programming libraries and software tools to apply research and design concepts learned.</li>
-<li>Coursera dataviz course: <a href="https://www.coursera.org/learn/jhu-data-visualization-r" class="uri">https://www.coursera.org/learn/jhu-data-visualization-r</a></li>
-</ul>
-</section>
-<section id="datasets" class="level2">
-<h2 class="anchored" data-anchor-id="datasets">Datasets</h2>
-<ul>
-<li><a href="https://r-packages.io/datasets" class="uri">https://r-packages.io/datasets</a></li>
-<li>ajthurston.com/validation</li>
-<li>IBM Human Resources Attrition Dataset</li>
-</ul>
-</section>
-<section id="glossary" class="level2">
-<h2 class="anchored" data-anchor-id="glossary">Glossary</h2>
-<ul>
-<li>Data visualization is the practice of communicating quantitative information through visual means. It’s goal is to take detailed individual or aggregate data to identify trends, group differences, and relationships among data to make the most salient findings readily accessible to technical and non-technical audiences alike. Data tables are not data visualization as they do not summarize data they simply present it.</li>
-<li>Organizational data visualization is communicating quantitative information visually for the purposes of aiding in work-related decision-making.</li>
-<li>This is contrasted from data art, which is the creation of aesthetically enjoyable data displays principally for their novelty or enjoyment.</li>
-</ul>
-</section>
-<section id="sources" class="level2">
-<h2 class="anchored" data-anchor-id="sources">Sources</h2>
-<ul>
-<li>https://hbr.org/data-visuals</li>
-<li>https://hbr.org/offers/visual-library</li>
-<li>https://medium.com/tag/data-visualization</li>
-<li>https://www.modernstatisticswithr.com/</li>
-<li><a href="https://policyviz.com/" class="uri">https://policyviz.com/</a></li>
-<li>https://www.nytimes.com/spotlight/graphics</li>
-<li>https://www.qlik.com/blog</li>
-<li><a href="https://stephanieevergreen.com/blog/" class="uri">https://stephanieevergreen.com/blog/</a></li>
-<li><a href="https://www.storytellingwithdata.com/blog" class="uri">https://www.storytellingwithdata.com/blog</a></li>
-<li>https://tellingstorieswithdata.com/</li>
-<li><a href="http://www.thefunctionalart.com/" class="uri">http://www.thefunctionalart.com/</a></li>
-<li><a href="https://visualcapitalist.com" class="uri">https://visualcapitalist.com</a></li>
-<li><a href="https://visualisingdata.com/" class="uri">https://visualisingdata.com/</a></li>
-</ul>
-</section>
-<section id="tools" class="level2">
-<h2 class="anchored" data-anchor-id="tools">Tools</h2>
-<ul>
-<li>Tool for adding live coding in course: https://r-wasm.github.io/quarto-live/</li>
-<li>Surveydown for collecting data: https://x.com/johnhelveston/status/1828124022514577432</li>
-<li>Chart pickers:
-<ul>
-<li>From Data to Viz visualization chooser: <a href="https://www.data-to-viz.com/" class="uri">https://www.data-to-viz.com/</a></li>
-<li><a href="https://datavizcatalogue.com/" class="uri">https://datavizcatalogue.com/</a></li>
+<li>Elasticities</li>
 </ul></li>
-<li>Esquisse package R drag and drop ggplot2</li>
 </ul>
 </section>
-<section id="videos" class="level2">
-<h2 class="anchored" data-anchor-id="videos">Videos</h2>
-<ul>
-<li>Nicola Rennie Spaghetti code talk: <a href="https://nrennie.rbind.io/talks/useR-spaghetti-code/slides.html#/section" class="uri">https://nrennie.rbind.io/talks/useR-spaghetti-code/slides.html#/section</a>; video: <a href="https://www.youtube.com/watch?v=wbhWl5-xR10" class="uri">https://www.youtube.com/watch?v=wbhWl5-xR10</a></li>
-<li>Bayron design hour long video on data visualization: https://youtu.be/tnikYc0O0-o</li>
-<li><a href="https://x.com/SpencrGreenberg/status/1746562746206863595/photo/2">x.com/SpencrGreenberg/status/1746562746206863595/photo/2</a></li>
-<li><a href="https://www.clearerthinking.org/post/we-tested-the-predictive-power-of-astrology-here-are-the-results">clearerthinking.org/post/we-tested-the-predictive-power-of-astrology-here-are-the-results</a></li>
-</ul>
 </section>
-<section id="random" class="level2">
-<h2 class="anchored" data-anchor-id="random">Random</h2>
+<section id="correlation" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="correlation"><span class="header-section-number">4.3</span> Correlation</h2>
 <ul>
-<li>Games:
+<li>Simple correlation</li>
+</ul>
+<section id="scatterplots" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="scatterplots"><span class="header-section-number">4.3.1</span> Scatterplots</h3>
+</section>
+<section id="correlelogram" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="correlelogram"><span class="header-section-number">4.3.2</span> Correlelogram</h3>
+</section>
+<section id="ternary-plots" class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="ternary-plots"><span class="header-section-number">4.3.3</span> Ternary plots</h3>
+</section>
+<section id="upset-plots" class="level3" data-number="4.3.4">
+<h3 data-number="4.3.4" class="anchored" data-anchor-id="upset-plots"><span class="header-section-number">4.3.4</span> Upset plots</h3>
+<p>Venn diagrams and Ballentine plots. <img src="../images/mspr.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="simple-linear-regression" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="simple-linear-regression"><span class="header-section-number">4.4</span> Simple linear regression</h2>
+<section id="expectancy-charts-ajthurston.comexpectancy" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="expectancy-charts-ajthurston.comexpectancy"><span class="header-section-number">4.4.1</span> Expectancy charts (ajthurston.com/expectancy)</h3>
+</section>
+<section id="relationship-heatmap" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="relationship-heatmap"><span class="header-section-number">4.4.2</span> Relationship heatmap</h3>
+<pre><code>-   &lt;https://x.com/clementychow/status/1831676878471807318&gt;
+-   \![\[curseword_heatmap.png \| 500\]\]</code></pre>
 <ul>
-<li>Data Land <a href="https://www.juliepeasley.com/data-land-board-game">Board Game</a></li>
-<li>Charty Party <a href="https://www.veryspecialgames.com/products/charty-party">Card Game</a></li>
-</ul></li>
-<li>Newsweek fairness meter: https://www.newsweek.com/fairness-meter</li>
-<li>Visualizing only inferential uncertainty, compared to outcome variability, can result in significant overestimates of treatment effects, even among highly trained experts (Zhang, et al., 2023). Inferential uncertainty (how precisely a statistic is estimated) and outcome variability (how much individual outcomes differ). This confusion can lead to an “illusion of predictability,” where people overestimate the certainty and significance of scientific findings.</li>
-<li>Data analysis workfow: <a href="https://archive.is/T1TsC" class="uri">https://archive.is/T1TsC</a></li>
-<li>Citedrive for bibliographic references for RStudio: citedrive.com/en/quarto</li>
-<li>Book Title: Organizational Data Visualization: Communicating clearly, concisely, and convincingly.</li>
-<li>Blue dot effect in picking colors for continuous variable scale like viridis, see cognitive biases notes in obsidian</li>
-<li><a href="https://pyoflife.com/data-visualization-in-r-with-100-examples/" class="uri">https://pyoflife.com/data-visualization-in-r-with-100-examples/</a></li>
-<li><a href="https://illustratingdata.com/tag/teagan-white/" class="uri">https://illustratingdata.com/tag/teagan-white/</a></li>
-<li><a href="https://handsondataviz.org/" class="uri">https://handsondataviz.org/</a></li>
-<li><a href="https://datavizs24.classes.andrewheiss.com/lesson/01-lesson.html" class="uri">https://datavizs24.classes.andrewheiss.com/lesson/01-lesson.html</a></li>
-<li>Videos on cognitive load
-<ul>
-<li><a href="https://youtube.com/shorts/nmNMasnNBQY" class="uri">https://youtube.com/shorts/nmNMasnNBQY</a></li>
-<li><a href="https://www.youtube.com/watch?v=Pmr_DeM815w" class="uri">https://www.youtube.com/watch?v=Pmr_DeM815w</a></li>
-</ul></li>
-<li>It would be tough to visualize a latent state–trait model with multiple indicators and autoregression across four measurement occasions in a simple, succinct, and “beautiful” way. Instead, the best visuals, in terms of effectively communicating and persuading the audience, focus on not much more than means (e.g., bar charts), variances (e.g., scatterplots), and groupings (e.g., social networks) (Ahmad &amp; Zhou)</li>
-<li>To form positive judgments of numerical information, people must be able to evaluate the “goodness” of a number (Voss &amp; Lake, 2020)</li>
-<li>Storytelling with data seminar: <a href="https://www.youtube.com/live/IfKlOC5HSHI">The art of exploring and explaining data</a></li>
-<li>Ted Talk (great statistics lecture): <a href="https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen?language=en&amp;subtitle=en">Hans Rosling: The best stats you’ve ever seen</a></li>
-<li><a href="https://www.ted.com/talks/hans_rosling_reveals_new_insights_on_poverty?language=en" class="uri">https://www.ted.com/talks/hans_rosling_reveals_new_insights_on_poverty?language=en</a><a href="https://rafalab.dfci.harvard.edu/dsbook-part-1/dataviz/intro-dataviz.html#fnref5">↩︎</a></li>
-<li><a href="https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen" class="uri">https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen</a><a href="https://rafalab.dfci.harvard.edu/dsbook-part-1/dataviz/intro-dataviz.html#fnref6">↩︎</a></li>
-<li>R Discovery App</li>
-<li>It would be tough to visualize a latent state–trait model with multiple indicators and autoregression across four measurement occasions in a simple, succinct, and “beautiful” way. Instead, the best visuals, in terms of effectively communicating and persuading the audience, focus on not much more than means (e.g., bar charts), variances (e.g., scatterplots), and groupings (e.g., social networks) (Ahmad &amp; Zhou)</li>
-<li>To form positive judgments of numerical information, people must be able to evaluate the “goodness” of a number (Voss &amp; Lake, 2020)</li>
-<li>Can grab attention tho: <a href="https://x.com/szucsi/status/1798700114690597353" class="uri">https://x.com/szucsi/status/1798700114690597353</a></li>
-<li>Misleading graphs are another crucial topic in data visualization. These are charts that misrepresent data, leading to incorrect conclusions. They can be intentionally deceptive or result from errors in data handling or graph construction. Common methods of creating misleading graphs include truncating axes, improper scaling, using 3D effects, omitting data, and biased labeling. These practices can distort data interpretation, making small differences appear significant or large differences appear minor. To avoid misleading graphs, strategies include clear labeling, appropriate scaling, and avoiding unnecessary complexity. Proper data visualization aims to present data accurately without manipulation, ensuring the audience can interpret the information correctly.</li>
-<li>How to make figures and presentations friendly to colorblind people: <a href="https://jfly.uni-koeln.de/color/" class="uri">https://jfly.uni-koeln.de/color/</a></li>
-<li>Modern data viz in R: <a href="https://pyoflife.com/modern-data-visualization-with-r/" class="uri">https://pyoflife.com/modern-data-visualization-with-r/</a></li>
-<li>Dataviz with R course: <a href="https://cognitiveclass.ai/courses/data-visualization-with-r#about-course" class="uri">https://cognitiveclass.ai/courses/data-visualization-with-r#about-course</a></li>
-<li>Multiple courses: <a href="https://www.datavis.ca/courses/" class="uri">https://www.datavis.ca/courses/</a></li>
-<li>Charts to make sense of 2024 from HBR: https://archive.ph/EJy0O</li>
-<li><a href="https://www.nytimes.com/2024/12/21/business/dealbook/business-economy-charts.html">NYT: From Inflation to Bitcoin, 9 Charts That Explain 2024</a>: <a href="https://archive.is/1FDZd">archived link</a></li>
+<li>Guttman chart, individuals vs.&nbsp;items</li>
 </ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -956,13 +878,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../context/index.html" class="pagination-link" aria-label="Context">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Context</span></span>
+      <a href="../categories/index.html" class="pagination-link" aria-label="Categories">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Categories</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../references/index.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../explainingrelationships/index.html" class="pagination-link" aria-label="Relationships: Explanatory">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Relationships: Explanatory</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

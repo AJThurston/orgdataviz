@@ -1,0 +1,61 @@
+# Visualizing Relationships: Describing Relationships
+
+## Flowcharts
+
+-   Mermaid graphs: <https://towardsdatascience.com/introduction-to-mermaid-graphs-in-markdown-080d4377cab4>
+
+## Group Differences
+
+-   Effect sizes here?
+    -   Cohen's D
+
+### Dumbbell Plots
+
+-   Dumbbell plot ajthurston.com/dumbbell
+
+### Knolling
+
+```         
+- ajthurston.com/knolling
+- Alternative in Excel: Tables with distributions and barplots
+- Simplified version in Excel: [Don't use regular bar charts! #excel #exceltutorial #exceltips #exceltricks](https://www.youtube.com/shorts/LazuEVXE-DU)
+- In R using gt_plt_dist() and gt_bar_plot(), examples here: <https://themockup.blog/posts/2022-06-13-gtextras-cran/>
+```
+
+-   Before and after with Cohen's U3 (ajthurston.com/u3) Inspired by Alliger (2024):
+
+![](/images/cohens_u3_distributions.png)
+
+-   Effect sizes (e.g., funnel and forest plots, alternative effect size displays)
+    -   Cohen's d
+    -   Common Language Effect Sizes (CLES)
+        -   Binomial effect size display
+        -   Cohen's U3
+    -   Elasticities
+
+## Correlation
+
+-   Simple correlation
+
+### Scatterplots
+
+### Correlelogram
+
+### Ternary plots
+
+### Upset plots
+
+Venn diagrams and Ballentine plots. ![](/images/mspr.png)
+
+## Simple linear regression
+
+### Expectancy charts (ajthurston.com/expectancy)
+
+### Relationship heatmap
+
+```         
+-   <https://x.com/clementychow/status/1831676878471807318>
+-   \![\[curseword_heatmap.png \| 500\]\]
+```
+
+-   Guttman chart, individuals vs. items

@@ -7,7 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="AJ Thurston">
-<meta name="dcterms.date" content="2024-12-29">
+<meta name="dcterms.date" content="2025-01-01">
+<meta name="description" content="orgdataviz.com">
 
 <title>Organizational Data Visualization</title>
 <style>
@@ -100,12 +101,25 @@ ul.task-list li input[type="checkbox"] {
       <a href="./">ODV</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/AJThurston/orgdataviz" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="./orgdataviz.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
-  <div class="quarto-reader-toggle-btn">
-  <i class="bi"></i>
-  </div>
-</a>
 </div>
     </div>
       </div>
@@ -208,9 +222,14 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Organizational Data Visualization</h1>
-<p class="subtitle lead">orgdataviz.com</p>
+<p class="subtitle lead">Communicating clearly, concisely, and convincingly</p>
 </div>
 
+<div>
+  <div class="description">
+    orgdataviz.com
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -225,7 +244,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 29, 2024</p>
+      <p class="date">January 1, 2025</p>
     </div>
   </div>
   
@@ -237,15 +256,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-
 <section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1><p><img src="./images/bull.jpg" title="Organizational Data Visualization" class="quarto-cover-image img-fluid"></p>
-<p>Welcome to Dr.&nbsp;<a href="https://ajthurston.com">AJ Thurston</a>’s course on Organizational Data Visualization (ODV) as a part of the <a href="https://io.gmu.edu">George Mason University Industrial and Organizational Psychology program</a>, focused on our Masters of Professional Studies in I-O students. The ODV course is designed to train students to communicating quantitative information clearly, concisely, and convincingly to organizational stakeholders.</p>
+<h1 class="unnumbered">Preface</h1>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>Welcome to Dr.&nbsp;<a href="https://ajthurston.com">AJ Thurston</a>’s course on Organizational Data Visualization (ODV) as a part of the <a href="https://io.gmu.edu">George Mason University Industrial and Organizational Psychology program</a>. This course is focused on students in our Masters of Professional Studies (MPS) in I-O program, specifically, and is part of the newly established interdisciplinary certificate in data science. ODV is designed to train students to communicating quantitative information clearly, concisely, and convincingly to organizational stakeholders. Visual communication is increasingly important in the workplace, making ODV an increasingly valuable skill for both organizations and individuals.</p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:35%;">
+<p><img src="./images/cover.png" class="img-fluid"></p>
+</div>
+</div>
 <section id="prerequisites" class="level2">
 <h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
 <p>This course requires a graduate level understanding of psychological statistics and a basic understanding of working with R and the {ggplot2} R package in particular. Specifically, students should have already completed PSYC 601: Applied Data Analysis in Psychology 1 or expressed written approval from the instructor in advance of the course.</p>
-<p>Students are encouraged to have already installed R, R Studio, Positron, Quarto, and Github. This course from Microsoft is recommended to build basic familiarity with R, the {tidyverse} and {ggplot2} R packages:<br>
-- <a href="https://learn.microsoft.com/en-us/training/modules/explore-analyze-data-with-r/">Microsoft: Explore and analyze data with R (1 hour)</a>\</p>
+<p>Students are encouraged to have already installed R, R Studio, Positron, Quarto, and Github. This course from Microsoft is recommended to build basic familiarity with R, the {tidyverse} and {ggplot2} R packages:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/training/modules/explore-analyze-data-with-r/">Microsoft: Explore and analyze data with R (1 hour)</a></li>
+</ul>
 <p>Students are encouraged to maintain their code on Github and to familiarize themselves with version control (e.g., git).</p>
 </section>
 <section id="software" class="level2">
@@ -293,6 +321,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="textbook" class="level2">
 <h2 class="anchored" data-anchor-id="textbook">Textbook</h2>
+<p>The following textbook is required for the course:</p>
 <p><a href="https://www.amazon.com/Visualize-This-FlowingData-Visualization-Statistics-dp-1394214863/dp/1394214863">Yau, N. (2024). <em>Visualize This: The flowingdata guide to design, visualization, and statistics second edition</em>. John Wiley and Sons.</a></p>
 </section>
 <section id="what-is-org-dataviz" class="level2">

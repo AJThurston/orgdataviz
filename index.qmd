@@ -1,13 +1,29 @@
 # Preface {.unnumbered}
 
-Welcome to Dr. [AJ Thurston](https://ajthurston.com)'s course on Organizational Data Visualization (ODV) as a part of the [George Mason University Industrial and Organizational Psychology program](https://io.gmu.edu), focused on our Masters of Professional Studies in I-O students. The ODV course is designed to train students to communicating quantitative information clearly, concisely, and convincingly to organizational stakeholders.
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+Welcome to Dr. [AJ Thurston](https://ajthurston.com)'s course on Organizational Data Visualization (ODV) as a part of the [George Mason University Industrial and Organizational Psychology program](https://io.gmu.edu). This course is focused on students in our Masters of Professional Studies (MPS) in I-O program, specifically, and is part of the newly established interdisciplinary certificate in data science. ODV is designed to train students to communicating quantitative information clearly, concisely, and convincingly to organizational stakeholders. Visual communication is increasingly important in the workplace, making ODV an increasingly valuable skill for both organizations and individuals.
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="35%"}
+![](/images/cover.png)
+:::
+
+::::
 
 ## Prerequisites
 
 This course requires a graduate level understanding of psychological statistics and a basic understanding of working with R and the {ggplot2} R package in particular. Specifically, students should have already completed PSYC 601: Applied Data Analysis in Psychology 1 or expressed written approval from the instructor in advance of the course.
 
-Students are encouraged to have already installed R, R Studio, Positron, Quarto, and Github. This course from Microsoft is recommended to build basic familiarity with R, the {tidyverse} and {ggplot2} R packages:\
-- [Microsoft: Explore and analyze data with R (1 hour)](https://learn.microsoft.com/en-us/training/modules/explore-analyze-data-with-r/)\\
+Students are encouraged to have already installed R, R Studio, Positron, Quarto, and Github. This course from Microsoft is recommended to build basic familiarity with R, the {tidyverse} and {ggplot2} R packages:
+
+- [Microsoft: Explore and analyze data with R (1 hour)](https://learn.microsoft.com/en-us/training/modules/explore-analyze-data-with-r/)
 
 Students are encouraged to maintain their code on Github and to familiarize themselves with version control (e.g., git).
 
@@ -38,6 +54,8 @@ Download and install the following software:
 +------------------------------------------------------------+-------------------------------------------------------------------------------------+
 
 ## Textbook
+
+The following textbook is required for the course:
 
 [Yau, N. (2024). *Visualize This: The flowingdata guide to design, visualization, and statistics second edition*. John Wiley and Sons.](https://www.amazon.com/Visualize-This-FlowingData-Visualization-Statistics-dp-1394214863/dp/1394214863)
 

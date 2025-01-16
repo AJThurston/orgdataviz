@@ -10,7 +10,13 @@
 - Maps with Leafdown
 - [https://cran.r-project.org/web/packages/tricolore/vignettes/choropleth_maps_with_tricolore.html](https://cran.r-project.org/web/packages/tricolore/vignettes/choropleth_maps_with_tricolore.html)
 - Virginia 2021 Gubenatorial Shift
-	- ![[virginia_gubenatorial_2021.png]]
+![](/images/virginia_gubenatorial_2021.png)
 	- https://www.reuters.com/graphics/USA-ELECTION/VIRGINIA/gkplgdmzavb/
-	- ![[tricolor_ternary_maps.png | 500]]
+![](/images/tricolor_ternary_maps.png)
 	- https://github.com/jschoeley/tricolore
+
+- Spatial autocorrelation
+	- https://x.com/yohaniddawela/status/1868992061568917669
+![](/images/spatial_autocorrelation.png)
+
+http://geostatsguy.github.io/MachineLearningDemos_Book/intro.html

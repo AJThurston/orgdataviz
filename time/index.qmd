@@ -5,39 +5,72 @@ format:
     toc-expand: 3
 editor: source
 ---
-
 # Visualizing Time
+
+- Things I wouldn't do; those racing barcharts that were popular a couple years ago on Reddit.
+
+## Categorical Events
+
+### Slope Plots
+
+Slope plots are useful for showing changes over time for categorical events with only two time points. The focus on only two time points should be naturally occuring, meaning you shouldn't cherry pick just two time points to highlight changes over time if there are more time points available.
+
+These slope plots capitalize on the evolution of the human visual system, namely, that our eyes have evolved to quickly detect differences in slopes as movement from predators. We can quickly glean angular directionality, that is, if a slope is increasing from the bottom left to the top right or vice versa. Slope plots allow your reader to quickly see which things have increased between the two time points and which have decreased.
+
+Take a look at this example comparing meta-analytic validity estimates of different individual difference selection assessments as reported by the classic @schmidt1998 study and the more recent @sackett2022 study. These validity estimates are the correlation between the assessement and job performance. You can quickly detect that nearly all of the estimates were revised down, with the exception of structured interviews and vocational interests which were slightly revised up between these two seminal studies.
+
+::: {#fig-slope}
+
+![](/images/slope.png)
+
+:::
+
+Too many categories quickly clutter slope plots. We can still capitalize on the angular directionality detection by breaking up slope plots using faceting. The {gt} tables package has options for sparklines that are pretty good to acheive this, but I prefer to create the plot myself. Essentially this becomes a table of slope plots, even though tables aren't data visualization, they can become one if they contain many data visualizations.
+
+::: {#fig-slope_table}
+
+![](/images/slope_table.png)
+
+:::
+
+**Resources**
+
+- Slope plot code: [ajthurston.com/slope](https://ajthurston.com/slope)
+- https://seeingdata.org/taketime/inside-the-chart-slope-graph/
+- https://datavizproject.com/data-type/slope-chart/
 
 ## Continuous Events
 
-### Line charts
+### Line Plots
+
+Line plots show changes in interval or ratio data over time. 
+
+Some people suggest that you should have rounded lines to emphasize the overall larger trends, and that straight lines between time points overemphasizes the data points themselves.
 
 ### Area charts
 
--   Changes over time as ratios: Month over month (MoM), year over year (YoY), etc.
-    -   Key Performance Indicators (KPIs)
--   Representing cycles and seasonality (seasonal plots, decomposition plots).
+- Changes over time as ratios: Month over month (MoM), year over year (YoY), etc.
+- Key Performance Indicators (KPIs)
+- Representing cycles and seasonality (seasonal plots, decomposition plots).
 
 ### Survival Analysis
 
 ### Communicating Uncertainty
 
-```         
--   538 has a cool way of showing uncertainty "95% of people fall in this band"
--   ![](/images/fivethirtyeight_confidence_interval.png.png)
-```
+- 538 has a cool way of showing uncertainty "95% of people fall in this band"
+- ![](/images/fivethirtyeight_confidence_interval.png.png)
 
 ## Categorical Events
 
 ## Waffleplot
 
 -   Visualization of events
--   I recommend for categorical only actually)
+-   I recommend for categorical only actually
     -   <https://vuorre.com/posts/2016-03-24-github-waffle-plot/>
     -   Cols: months, rows: days
     -   Memento mori plot with 80 years of months
     -   <https://x.com/AlecStapp/status/1826341717467115743/photo/1>
-    -   ![](/images/measles.png)
+![](/images/measles.png)
         -   This one is "bad" because I don't need it broken out by state if the cases do not meaningfully differ by state
         -   I also prefer to use line charts for continuous data on the y-axis
         -   If necessary I would do line charts as facets for each state
@@ -54,17 +87,16 @@ editor: source
 
 ### Bump Plot
 
--   Bump plot for rank order changes over time
-    -   [r-graph-gallery.com/package/ggbump.html](https://r-graph-gallery.com/package/ggbump.html)
-    -   Sackett et al. 2022 meta-analysis of predictors:
-    -   \![\[sackett2022.png \| 500\]\]
+- Bump plot for rank order changes over time
+- [r-graph-gallery.com/package/ggbump.html](https://r-graph-gallery.com/package/ggbump.html)
 
 ## Forecasting
 
--   There was a SIOP 2024 talk I attended on this?
--   [Financial Times: Never ever make predictions](https://www.ft.com/content/3e928a47-a6f0-4e0a-9bb4-3e7dbc749ece) [Archive](https://archive.is/EvThB)
+- There was a SIOP 2024 talk I attended on this?
+- [Financial Times: Never ever make predictions](https://www.ft.com/content/3e928a47-a6f0-4e0a-9bb4-3e7dbc749ece) [Archive](https://archive.is/EvThB)
 
 ![](/images/ft_predictions_parody.png)
 
--   Visualization of seasonality using births, but make something like this but for accidents at work to demonstrate seasonality
--   [Awesome strategies for visualizing changes over time](https://medium.com/@yuanbo.faith/awesome-strategies-to-visualize-change-with-time-f8a7fa8362f2)
+- Visualization of seasonality using births, but make something like this but for accidents at work to demonstrate seasonality
+- [Awesome strategies for visualizing changes over time](https://medium.com/@yuanbo.faith/awesome-strategies-to-visualize-change-with-time-f8a7fa8362f2)
+- https://x.com/aureliusltd28/status/1869416785684127783

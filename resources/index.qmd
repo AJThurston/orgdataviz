@@ -2,6 +2,7 @@
 
 ## Books
 
+- [Applied Machine Learning in Python: a Hands-on Guide with Code](http://geostatsguy.github.io/MachineLearningDemos_Book/intro.html)
 -   [Big Book of R](https://www.bigbookofr.com/)
 -   [Graphic methods for presenting facts - Willard C. Brinton](https://archive.org/details/graphicmethodsfo00brinrich)
 -   [Fundamentals of Data Visualization - Claus O. Wilke](https://clauswilke.com/dataviz)

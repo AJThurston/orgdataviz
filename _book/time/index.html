@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="orgdataviz.com">
 
 <title>2&nbsp; Visualizing Time – Organizational Data Visualization</title>
 <style>
@@ -20,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -99,12 +120,25 @@ ul.task-list li input[type="checkbox"] {
       <a href="../">ODV</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/AJThurston/orgdataviz" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="../orgdataviz.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
-  <div class="quarto-reader-toggle-btn">
-  <i class="bi"></i>
-  </div>
-</a>
 </div>
     </div>
       </div>
@@ -191,24 +225,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#continuous-events" id="toc-continuous-events" class="nav-link active" data-scroll-target="#continuous-events"><span class="header-section-number">2.1</span> Continuous Events</a>
+  <li><a href="#categorical-events" id="toc-categorical-events" class="nav-link active" data-scroll-target="#categorical-events"><span class="header-section-number">2.1</span> Categorical Events</a>
   <ul class="collapse">
-  <li><a href="#line-charts" id="toc-line-charts" class="nav-link" data-scroll-target="#line-charts"><span class="header-section-number">2.1.1</span> Line charts</a></li>
-  <li><a href="#area-charts" id="toc-area-charts" class="nav-link" data-scroll-target="#area-charts"><span class="header-section-number">2.1.2</span> Area charts</a></li>
-  <li><a href="#survival-analysis" id="toc-survival-analysis" class="nav-link" data-scroll-target="#survival-analysis"><span class="header-section-number">2.1.3</span> Survival Analysis</a></li>
-  <li><a href="#communicating-uncertainty" id="toc-communicating-uncertainty" class="nav-link" data-scroll-target="#communicating-uncertainty"><span class="header-section-number">2.1.4</span> Communicating Uncertainty</a></li>
+  <li><a href="#slope-plots" id="toc-slope-plots" class="nav-link" data-scroll-target="#slope-plots"><span class="header-section-number">2.1.1</span> Slope Plots</a></li>
   </ul></li>
-  <li><a href="#categorical-events" id="toc-categorical-events" class="nav-link" data-scroll-target="#categorical-events"><span class="header-section-number">2.2</span> Categorical Events</a></li>
-  <li><a href="#waffleplot" id="toc-waffleplot" class="nav-link" data-scroll-target="#waffleplot"><span class="header-section-number">2.3</span> Waffleplot</a>
+  <li><a href="#continuous-events" id="toc-continuous-events" class="nav-link" data-scroll-target="#continuous-events"><span class="header-section-number">2.2</span> Continuous Events</a>
   <ul class="collapse">
-  <li><a href="#gantt-charts" id="toc-gantt-charts" class="nav-link" data-scroll-target="#gantt-charts"><span class="header-section-number">2.3.1</span> Gantt Charts</a></li>
+  <li><a href="#line-plots" id="toc-line-plots" class="nav-link" data-scroll-target="#line-plots"><span class="header-section-number">2.2.1</span> Line Plots</a></li>
+  <li><a href="#area-charts" id="toc-area-charts" class="nav-link" data-scroll-target="#area-charts"><span class="header-section-number">2.2.2</span> Area charts</a></li>
+  <li><a href="#survival-analysis" id="toc-survival-analysis" class="nav-link" data-scroll-target="#survival-analysis"><span class="header-section-number">2.2.3</span> Survival Analysis</a></li>
+  <li><a href="#communicating-uncertainty" id="toc-communicating-uncertainty" class="nav-link" data-scroll-target="#communicating-uncertainty"><span class="header-section-number">2.2.4</span> Communicating Uncertainty</a></li>
   </ul></li>
-  <li><a href="#rank-order-changes" id="toc-rank-order-changes" class="nav-link" data-scroll-target="#rank-order-changes"><span class="header-section-number">2.4</span> Rank Order Changes</a>
+  <li><a href="#categorical-events-1" id="toc-categorical-events-1" class="nav-link" data-scroll-target="#categorical-events-1"><span class="header-section-number">2.3</span> Categorical Events</a></li>
+  <li><a href="#waffleplot" id="toc-waffleplot" class="nav-link" data-scroll-target="#waffleplot"><span class="header-section-number">2.4</span> Waffleplot</a>
   <ul class="collapse">
-  <li><a href="#alluvial-diagrams" id="toc-alluvial-diagrams" class="nav-link" data-scroll-target="#alluvial-diagrams"><span class="header-section-number">2.4.1</span> Alluvial Diagrams</a></li>
-  <li><a href="#bump-plot" id="toc-bump-plot" class="nav-link" data-scroll-target="#bump-plot"><span class="header-section-number">2.4.2</span> Bump Plot</a></li>
+  <li><a href="#gantt-charts" id="toc-gantt-charts" class="nav-link" data-scroll-target="#gantt-charts"><span class="header-section-number">2.4.1</span> Gantt Charts</a></li>
   </ul></li>
-  <li><a href="#forecasting" id="toc-forecasting" class="nav-link" data-scroll-target="#forecasting"><span class="header-section-number">2.5</span> Forecasting</a></li>
+  <li><a href="#rank-order-changes" id="toc-rank-order-changes" class="nav-link" data-scroll-target="#rank-order-changes"><span class="header-section-number">2.5</span> Rank Order Changes</a>
+  <ul class="collapse">
+  <li><a href="#alluvial-diagrams" id="toc-alluvial-diagrams" class="nav-link" data-scroll-target="#alluvial-diagrams"><span class="header-section-number">2.5.1</span> Alluvial Diagrams</a></li>
+  <li><a href="#bump-plot" id="toc-bump-plot" class="nav-link" data-scroll-target="#bump-plot"><span class="header-section-number">2.5.2</span> Bump Plot</a></li>
+  </ul></li>
+  <li><a href="#forecasting" id="toc-forecasting" class="nav-link" data-scroll-target="#forecasting"><span class="header-section-number">2.6</span> Forecasting</a></li>
   </ul>
 </nav>
     </div>
@@ -234,44 +272,84 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="continuous-events" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="continuous-events"><span class="header-section-number">2.1</span> Continuous Events</h2>
-<section id="line-charts" class="level3" data-number="2.1.1">
-<h3 data-number="2.1.1" class="anchored" data-anchor-id="line-charts"><span class="header-section-number">2.1.1</span> Line charts</h3>
+<ul>
+<li>Things I wouldn’t do; those racing barcharts that were popular a couple years ago on Reddit.</li>
+</ul>
+<section id="categorical-events" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="categorical-events"><span class="header-section-number">2.1</span> Categorical Events</h2>
+<section id="slope-plots" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="slope-plots"><span class="header-section-number">2.1.1</span> Slope Plots</h3>
+<p>Slope plots are useful for showing changes over time for categorical events with only two time points. The focus on only two time points should be naturally occuring, meaning you shouldn’t cherry pick just two time points to highlight changes over time if there are more time points available.</p>
+<p>These slope plots capitalize on the evolution of the human visual system, namely, that our eyes have evolved to quickly detect differences in slopes as movement from predators. We can quickly glean angular directionality, that is, if a slope is increasing from the bottom left to the top right or vice versa. Slope plots allow your reader to quickly see which things have increased between the two time points and which have decreased.</p>
+<p>Take a look at this example comparing meta-analytic validity estimates of different individual difference selection assessments as reported by the classic <span class="citation" data-cites="schmidt1998">Schmidt and Hunter (<a href="../references/index.html#ref-schmidt1998" role="doc-biblioref">1998</a>)</span> study and the more recent <span class="citation" data-cites="sackett2022">Sackett et al. (<a href="../references/index.html#ref-sackett2022" role="doc-biblioref">2022</a>)</span> study. These validity estimates are the correlation between the assessement and job performance. You can quickly detect that nearly all of the estimates were revised down, with the exception of structured interviews and vocational interests which were slightly revised up between these two seminal studies.</p>
+<div id="fig-slope" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-slope-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/slope.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-slope-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1
+</figcaption>
+</figure>
+</div>
+<p>Too many categories quickly clutter slope plots. We can still capitalize on the angular directionality detection by breaking up slope plots using faceting. The {gt} tables package has options for sparklines that are pretty good to acheive this, but I prefer to create the plot myself. Essentially this becomes a table of slope plots, even though tables aren’t data visualization, they can become one if they contain many data visualizations.</p>
+<div id="fig-slope_table" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-slope_table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/slope_table.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-slope_table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2
+</figcaption>
+</figure>
+</div>
+<p><strong>Resources</strong></p>
+<ul>
+<li>Slope plot code: <a href="https://ajthurston.com/slope">ajthurston.com/slope</a></li>
+<li>https://seeingdata.org/taketime/inside-the-chart-slope-graph/</li>
+<li>https://datavizproject.com/data-type/slope-chart/</li>
+</ul>
 </section>
-<section id="area-charts" class="level3" data-number="2.1.2">
-<h3 data-number="2.1.2" class="anchored" data-anchor-id="area-charts"><span class="header-section-number">2.1.2</span> Area charts</h3>
+</section>
+<section id="continuous-events" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="continuous-events"><span class="header-section-number">2.2</span> Continuous Events</h2>
+<section id="line-plots" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="line-plots"><span class="header-section-number">2.2.1</span> Line Plots</h3>
+<p>Line plots show changes in interval or ratio data over time.</p>
+<p>Some people suggest that you should have rounded lines to emphasize the overall larger trends, and that straight lines between time points overemphasizes the data points themselves.</p>
+</section>
+<section id="area-charts" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="area-charts"><span class="header-section-number">2.2.2</span> Area charts</h3>
 <ul>
-<li>Changes over time as ratios: Month over month (MoM), year over year (YoY), etc.
-<ul>
+<li>Changes over time as ratios: Month over month (MoM), year over year (YoY), etc.</li>
 <li>Key Performance Indicators (KPIs)</li>
-</ul></li>
 <li>Representing cycles and seasonality (seasonal plots, decomposition plots).</li>
 </ul>
 </section>
-<section id="survival-analysis" class="level3" data-number="2.1.3">
-<h3 data-number="2.1.3" class="anchored" data-anchor-id="survival-analysis"><span class="header-section-number">2.1.3</span> Survival Analysis</h3>
+<section id="survival-analysis" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="survival-analysis"><span class="header-section-number">2.2.3</span> Survival Analysis</h3>
 </section>
-<section id="communicating-uncertainty" class="level3" data-number="2.1.4">
-<h3 data-number="2.1.4" class="anchored" data-anchor-id="communicating-uncertainty"><span class="header-section-number">2.1.4</span> Communicating Uncertainty</h3>
-<pre><code>-   538 has a cool way of showing uncertainty "95% of people fall in this band"
--   ![](/images/fivethirtyeight_confidence_interval.png.png)</code></pre>
+<section id="communicating-uncertainty" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="communicating-uncertainty"><span class="header-section-number">2.2.4</span> Communicating Uncertainty</h3>
+<ul>
+<li>538 has a cool way of showing uncertainty “95% of people fall in this band”</li>
+<li><img src="../images/fivethirtyeight_confidence_interval.png.png" class="img-fluid"></li>
+</ul>
 </section>
 </section>
-<section id="categorical-events" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="categorical-events"><span class="header-section-number">2.2</span> Categorical Events</h2>
+<section id="categorical-events-1" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="categorical-events-1"><span class="header-section-number">2.3</span> Categorical Events</h2>
 </section>
-<section id="waffleplot" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="waffleplot"><span class="header-section-number">2.3</span> Waffleplot</h2>
+<section id="waffleplot" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="waffleplot"><span class="header-section-number">2.4</span> Waffleplot</h2>
 <ul>
 <li>Visualization of events</li>
-<li>I recommend for categorical only actually)
+<li>I recommend for categorical only actually
 <ul>
 <li><a href="https://vuorre.com/posts/2016-03-24-github-waffle-plot/" class="uri">https://vuorre.com/posts/2016-03-24-github-waffle-plot/</a></li>
 <li>Cols: months, rows: days</li>
 <li>Memento mori plot with 80 years of months</li>
-<li><a href="https://x.com/AlecStapp/status/1826341717467115743/photo/1" class="uri">https://x.com/AlecStapp/status/1826341717467115743/photo/1</a></li>
-<li><img src="../images/measles.png" class="img-fluid">
+<li><a href="https://x.com/AlecStapp/status/1826341717467115743/photo/1" class="uri">https://x.com/AlecStapp/status/1826341717467115743/photo/1</a> <img src="../images/measles.png" class="img-fluid">
 <ul>
 <li>This one is “bad” because I don’t need it broken out by state if the cases do not meaningfully differ by state</li>
 <li>I also prefer to use line charts for continuous data on the y-axis</li>
@@ -280,33 +358,29 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul></li>
 </ul>
-<section id="gantt-charts" class="level3" data-number="2.3.1">
-<h3 data-number="2.3.1" class="anchored" data-anchor-id="gantt-charts"><span class="header-section-number">2.3.1</span> Gantt Charts</h3>
+<section id="gantt-charts" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="gantt-charts"><span class="header-section-number">2.4.1</span> Gantt Charts</h3>
 </section>
 </section>
-<section id="rank-order-changes" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="rank-order-changes"><span class="header-section-number">2.4</span> Rank Order Changes</h2>
-<section id="alluvial-diagrams" class="level3" data-number="2.4.1">
-<h3 data-number="2.4.1" class="anchored" data-anchor-id="alluvial-diagrams"><span class="header-section-number">2.4.1</span> Alluvial Diagrams</h3>
+<section id="rank-order-changes" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="rank-order-changes"><span class="header-section-number">2.5</span> Rank Order Changes</h2>
+<section id="alluvial-diagrams" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="alluvial-diagrams"><span class="header-section-number">2.5.1</span> Alluvial Diagrams</h3>
 <ul>
 <li>Alluvial diagrams</li>
 <li>Sankey diagrams</li>
 </ul>
 </section>
-<section id="bump-plot" class="level3" data-number="2.4.2">
-<h3 data-number="2.4.2" class="anchored" data-anchor-id="bump-plot"><span class="header-section-number">2.4.2</span> Bump Plot</h3>
+<section id="bump-plot" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="bump-plot"><span class="header-section-number">2.5.2</span> Bump Plot</h3>
 <ul>
-<li>Bump plot for rank order changes over time
-<ul>
+<li>Bump plot for rank order changes over time</li>
 <li><a href="https://r-graph-gallery.com/package/ggbump.html">r-graph-gallery.com/package/ggbump.html</a></li>
-<li>Sackett et al.&nbsp;2022 meta-analysis of predictors:</li>
-<li>![[sackett2022.png | 500]]</li>
-</ul></li>
 </ul>
 </section>
 </section>
-<section id="forecasting" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="forecasting"><span class="header-section-number">2.5</span> Forecasting</h2>
+<section id="forecasting" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="forecasting"><span class="header-section-number">2.6</span> Forecasting</h2>
 <ul>
 <li>There was a SIOP 2024 talk I attended on this?</li>
 <li><a href="https://www.ft.com/content/3e928a47-a6f0-4e0a-9bb4-3e7dbc749ece">Financial Times: Never ever make predictions</a> <a href="https://archive.is/EvThB">Archive</a></li>
@@ -315,9 +389,18 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Visualization of seasonality using births, but make something like this but for accidents at work to demonstrate seasonality</li>
 <li><a href="https://medium.com/@yuanbo.faith/awesome-strategies-to-visualize-change-with-time-f8a7fa8362f2">Awesome strategies for visualizing changes over time</a></li>
+<li>https://x.com/aureliusltd28/status/1869416785684127783</li>
 </ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-sackett2022" class="csl-entry" role="listitem">
+Sackett, Paul R., Charlene Zhang, Christopher M. Berry, and Filip Lievens. 2022. <span>“Revisiting Meta-Analytic Estimates of Validity in Personnel Selection: Addressing Systematic Overcorrection for Restriction of Range.”</span> <em>Journal of Applied Psychology</em> 107 (11): 2040–68. <a href="https://doi.org/10.1037/apl0000994">https://doi.org/10.1037/apl0000994</a>.
+</div>
+<div id="ref-schmidt1998" class="csl-entry" role="listitem">
+Schmidt, Frank L., and John E. Hunter. 1998. <span>“The Validity and Utility of Selection Methods in Personnel Psychology: Practical and Theoretical Implications of 85 Years of Research Findings.”</span> <em>Psychological Bulletin</em> 124 (2): 262–74. https://doi.org/<a href="https://doi.org/10.1037/0033-2909.124.2.262">https://doi.org/10.1037/0033-2909.124.2.262</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

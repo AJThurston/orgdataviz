@@ -1,8 +1,35 @@
 # Contextual Considerations
 
-### Accessibility
+## Words Matter(?)
+The language used to describe the data matters
+- Perceptions of probability: https://github.com/zonination/perceptions 
+![](/images/perceptions_of_probability.png) 
+- How to communicate statistical concepts without sounding like a robot: https://www.linkedin.com/posts/morgandepenbusch_data-analyst-cheat-sheet-ugcPost-7275556209892446210-6Ilu/
 
-Here's a bunch of links on accessibility I got from Harvard: https://accessibility.huit.harvard.edu/data-viz-charts-graphs - [Technique: Describing graphs](https://accessibility.huit.harvard.edu/technique-describing-graphs) - [10 Guidelines for DataViz Accessibility – Highcharts](https://www.highcharts.com/blog/tutorials/10-guidelines-for-dataviz-accessibility/) - [An intro to designing accessible data visualizations by Sarah L. Fossheim](https://fossheim.io/writing/posts/accessible-dataviz-design/)  - [5 easy ways to make your data visualization more accessible](https://www.storytellingwithdata.com/blog/2018/6/26/accessible-data-viz-is-better-data-viz) - [Accessibility Considerations in Data Visualization Design](https://keen.io/blog/accessibility-in-data-vis/) - [How to make charts and graphs more accessible – Pope Tech](https://blog.pope.tech/2023/08/31/how-to-make-charts-and-graphs-more-accessible/) - The language used to describe the data matters - Perceptions of probability: https://github.com/zonination/perceptions \![\[perceptions_of_probability.png\]\] - Cognitive load - Annotations and best practices for data visualization workflows - Ethical, legal, and cultural considerations in data visualization - Accessibility: Colorblindness, ADA, Section 508 compliance - How to make figures and presentations friendly to colorblind people: <https://jfly.uni-koeln.de/color/> - Obake Ito Color Palette: [http://www.cookbook-r.com/Graphs/Colors\_(ggplot2)](http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/#a-colorblind-friendly-palette) - Okabe-Ito (2008) color palette vs. viridis, I like the former for categorical/nominal data vs. viridus which is good for interval or ratio data, a lot of good detail here: <https://stackoverflow.com/questions/57153428/r-plot-color-combinations-that-are-colorblind-accessible> - Alt-text - User centered design/human factors and gathering feedback - Privacy and data security considerations in data visualization - Data visualization isn't just about you visualizing your data but understanding and evaluating other people's visual presentation of data (or sniffing out bad dataviz bullshit)
+## Accessibility
+- Accessibility: Colorblindness, ADA, Section 508 compliance
+
+
+Here's a bunch of links on accessibility I got from Harvard: https://accessibility.huit.harvard.edu/data-viz-charts-graphs
+    - [Technique: Describing graphs](https://accessibility.huit.harvard.edu/technique-describing-graphs)
+    - [10 Guidelines for DataViz Accessibility – Highcharts](https://www.highcharts.com/blog/tutorials/10-guidelines-for-dataviz-accessibility/) - [An intro to designing accessible data visualizations by Sarah L. Fossheim](https://fossheim.io/writing/posts/accessible-dataviz-design/)
+    - [5 easy ways to make your data visualization more accessible](https://www.storytellingwithdata.com/blog/2018/6/26/accessible-data-viz-is-better-data-viz) - [Accessibility Considerations in Data Visualization Design](https://keen.io/blog/accessibility-in-data-vis/)
+    - [How to make charts and graphs more accessible – Pope Tech](https://blog.pope.tech/2023/08/31/how-to-make-charts-and-graphs-more-accessible/)
+
+
+
+## Cognitive load
+- [Stephanie Evergreen: 10 Ways to Make Your Graphs More Accessible](https://stephanieevergreen.com/accessible/)
+- Annotations and best practices for data visualization workflows
+- Ethical, legal, and cultural considerations in data visualization
+
+
+- [How to make figures and presentations friendly to colorblind people](https://jfly.uni-koeln.de/color)
+- [Obake Ito Color Palette](http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/#a-colorblind-friendly-palette)
+- Okabe-Ito (2008) color palette vs. viridis, I like the former for categorical/nominal data vs. viridus which is good for interval or ratio data, a lot of good detail here: https://stackoverflow.com/questions/57153428/r-plot-color-combinations-that-are-colorblind-accessible
+- Alt-text - User centered design/human factors and gathering feedback
+- Privacy and data security considerations in data visualization
+- Data visualization isn't just about you visualizing your data but understanding and evaluating other people's visual presentation of data (or sniffing out bad dataviz bullshit)
 
 ### Hosting
 

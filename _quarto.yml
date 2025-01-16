@@ -2,15 +2,18 @@ project:
   type: book
 
 book:
-  reader-mode: true
+  reader-mode: false
   page-footer:
     center: "Andrew J. Thurston © 2025"
   license: "Andrew J. Thurston © 2025"
   title: "Organizational Data Visualization"
-  subtitle: "orgdataviz.com"
-  cover-image: /images/bull.jpg
+  subtitle: "Communicating clearly, concisely, and convincingly"
+  description: "orgdataviz.com"
+  output-file: "orgdataviz"
+#  cover-image: /images/cover.png
+  sharing: [twitter, linkedin]
   author: "AJ Thurston"
-  date: "12/29/2024"
+  date: "01/01/2025"
   chapters:
     - index.qmd
     - intro/index.qmd
@@ -39,7 +42,7 @@ book:
   search: 
     location: sidebar
     type: textbox
-#  downloads: [pdf, epub]
+  downloads: pdf
 
 bibliography: references.bib
 
@@ -50,8 +53,9 @@ format:
       dark: darkly 
     toc: true
     toc-expand: 3
-  #pdf:
-    #documentclass: scrreprt
+  pdf:
+    cover-image: /images/cover.png
+    documentclass: scrbook
 
 editor: source
 

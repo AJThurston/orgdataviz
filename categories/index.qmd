@@ -1,8 +1,26 @@
 # Visualizing Categories
 
-## Frequencies and Distributions
+## Frequencies
 
-### Histograms
+### Barplots
+```{r}
+library(ggplot2)
+dat <- read.csv(here::here("data/validation.csv"), header = T)
+
+ggplot(data = dat, aes(x = male, y = lapr)) +
+    geom_bar(position = "dodge", 
+            stat = "summary", 
+            fun = "mean")
+```
+
+### Endpoints
+![](/images/endpoints.jpg)
+Credit: [Salma Sultana (LinkedIn)](https://www.linkedin.com/posts/-salma-sultana-_in-data-communication-one-of-the-most-overlooked-activity-7274445673494691840-qAid)
+
+### Targets
+![](/images/targets_eds.png)
+
+![](/images/apple_performance.png)
 
 ### Density Plot
 
@@ -10,17 +28,12 @@
     -   Bar charts, loading bar chart as whitespace is information as well
     -   Communicating the lack of results is just as important as communicating the presence of results. Audiences are predispositioned to want to look for differences, but you must help them understand the MANIFOLD of differences, the larger context, that while there may be 2 differences among 10, the other 8 are not. You'd be surprised how often you need to state this explicitly.
 
-![](/images/apple_performance.png)
 
 ### Icon array
 
 Icon arrays are useful alternatives to bar plots because they are empirically better understood by non-technical audiences [@zhang2018].
 
 ### Jitterplot
-
-### Targets
-
-![](/images/targets_eds.png)
 
 ## Descriptives Statistics
 
@@ -32,12 +45,10 @@ Icon arrays are useful alternatives to bar plots because they are empirically be
 -   Visualization of IQRs with density and quantiles overlaid
 
 ### Raincloud plot
-
-```         
+      
 - Raincloud plots: https://medium.com/@amorimfranchi/raincloud-plots-for-clear-precise-and-efficient-data-communication-4c71d0a37c23 
-- ![[raincoud.png | 500]]
-- ![[dataviz_cpuperformance.png | 500]]
-```
+
+![](/images/raincoud.png)
 
 ## Parts of a Whole
 
@@ -76,8 +87,8 @@ We don't do pie charts because of this:
 -   Tricolor/ternary/triangle plot: [WSJ: What type of voter are you?](https://www.wsj.com/politics/elections/election-2024-quiz-poll-ideology-7533f46b)
 
     -   [Instagram link](https://www.instagram.com/p/C8F9PRNNd_b/)
-    -   \![\[wsj_what_type_voter_ternary.png \| 500\]\]
-    -   \![\[soil_ternary_plot.png \| 500\]\]
+![](/images/wsj_what_type_voter_ternary.png)
+![](/images/soil_ternary_plot.png)
         -   https://github.com/jschoeley/tricolore
 
 ------------------------------------------------------------------------

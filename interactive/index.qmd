@@ -1,4 +1,6 @@
-# Interactive Visualization
+---
+title: "Interactive Visualization"
+---
 
 - Exposure to PowerBI, datawrappers, and advanced programming (e.g., D3.js)
 - Hosting interactive tools (e.g., Github Pages, Netlify)

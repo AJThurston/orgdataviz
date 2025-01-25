@@ -1,4 +1,6 @@
-# Visualizing Relationships: Describing Relationships
+---
+title: "Visualizing Relationships: Describing Relationships"
+---
 
 ## Flowcharts
 
@@ -34,6 +36,10 @@
     -   Elasticities
 
 ## Correlation
+
+Correlations are most frequently used to describe a relationship between two continuous variables. In another way, a statistically significant correlation tells when two things are happening together so frequently it's unlikely to just be a coincidence. 
+
+Find the funniest correlation you can: https://tylervigen.com/spurious-correlations
 
 -   Simple correlation
 

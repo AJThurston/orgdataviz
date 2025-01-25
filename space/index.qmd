@@ -1,4 +1,6 @@
-# Visualizing Space
+---
+title: "Visualizing Space"
+---
 
 ### Maps
 - [YouTube: RealLifeLore: The Coastline Paradox Explained (6 minutes)](https://www.youtube.com/watch?v=kFjq8PX6F7I&t=8s)

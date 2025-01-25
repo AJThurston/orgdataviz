@@ -1,4 +1,6 @@
-# Visualizing Categories
+---
+title: "Visualizing Categories"
+---
 
 ## Frequencies
 
@@ -12,6 +14,8 @@ ggplot(data = dat, aes(x = male, y = lapr)) +
             stat = "summary", 
             fun = "mean")
 ```
+
+- Also lollipop charts
 
 ### Endpoints
 ![](/images/endpoints.jpg)
@@ -56,7 +60,7 @@ Icon arrays are useful alternatives to bar plots because they are empirically be
 
 Do not make pie charts. They are very common but difficult to resolve as our brains struggle with how to resolve circles and are not adept at determining length from circumference.
 
-Watch this video to see just how bad our brains are at this:
+The video below shows just how difficult it is to estimate the length of a circumference using a friendly bar trick. See if you can bet which is longer before watching the video: the height of the glass, including the elevated height of decks of cards, or just the circumference of the glass in this demonstration:
 
 ::: {#fig-rogue}
 
@@ -70,23 +74,25 @@ If you're asked to make a pie chart, please show this video to your boss or whoe
 
 Another issue is that pie charts are essentially area charts. 
 
+- [Morgan Depenbush, PhD (Google): Alternative to Pie Charts](https://www.linkedin.com/posts/morgandepenbusch_pie-chart-alternative-activity-7282077701098676224-dKBW)
+
+### Area Charts
+- Area charts are unclear, use quantile charts instead: https://bsky.app/profile/dhmontgomery.com/post/3lgbbipumyv2m
+- Also referred to as "mosiac charts", "treemaps", and "eikosograms" for join probabilities
+- https://cran.r-project.org/web/packages/eikosograms/vignettes/Introduction.html
+
+**Resources**
+
+
+
 ### Knolling
 
-### Mosiac Plots
 
--   Or parts of a whole
 
-We don't do pie charts because of this:
+## Other
 
--   
-
--   
-
-    -   Our brains are not built to process just how long things are around
-
--   Tricolor/ternary/triangle plot: [WSJ: What type of voter are you?](https://www.wsj.com/politics/elections/election-2024-quiz-poll-ideology-7533f46b)
-
-    -   [Instagram link](https://www.instagram.com/p/C8F9PRNNd_b/)
+- Tricolor/ternary/triangle plot: [WSJ: What type of voter are you?](https://www.wsj.com/politics/elections/election-2024-quiz-poll-ideology-7533f46b)
+- [Instagram link](https://www.instagram.com/p/C8F9PRNNd_b/)
 ![](/images/wsj_what_type_voter_ternary.png)
 ![](/images/soil_ternary_plot.png)
         -   https://github.com/jschoeley/tricolore

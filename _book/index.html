@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -278,7 +298,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="software" class="level2">
 <h2 class="anchored" data-anchor-id="software">Software</h2>
-<p>Download and install the following software:</p>
+<p>Download and install the following software. If you need step-by-step instructions, <a href="https://smithcollege-sds.github.io/sds100/setup_mac.html">a useful guide is available here</a>:</p>
 <table class="caption-top table">
 <tbody>
 <tr class="odd">
@@ -327,9 +347,15 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-is-org-dataviz" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-org-dataviz">What is Org Dataviz?</h2>
 <p>Data visualization is the communication of numeric information using graphic displays a skill, much like written &amp; oral communication skills. Data visualization can also be art, designed to evoke a feeling or thought. Data visualization typically has two main functions: exploratory visualizations which reveal new patterns &amp; relationships; explanatory visualizations evaluate hypotheses or aid decision-making. Not all data visualization is ODV.</p>
-<p><strong>Organizational data visualization is the production of visual displays of quantitative data to support organizational decision-making</strong> which aims to describe, explain, predict, and change human behavior at work. ODV is not just data visualization as in related technical fields like biology or operational business components like logistics since these focus on non-human behavior (e.g., animals in biology) or behaviors of non-human systems (e.g., supply chain bottlenecks in logistics). ODV is distinct from data art (e.g., <a href="https://www.reddit.com/r/dataisbeautiful">reddit.com/r/dataisbeautiful</a>) in that the primary purpose of data art is to entertain or for purely aesthetic purposes ODV is ruthlessly useful and simple and should make decisions obvious to stakeholders.</p>
+<p>Organizational data visualization is the production of visual displays of quantitative data to support organizational decision-making which aims to describe, explain, predict, and change human behavior at work. ODV is not just data visualization as in related technical fields like biology or operational business components like logistics since these focus on non-human behavior (e.g., animals in biology) or behaviors of non-human systems (e.g., supply chain bottlenecks in logistics). ODV is distinct from data art (e.g., reddit.com/r/dataisbeautiful) in that the primary purpose of data art is to entertain or for purely aesthetic purposes ODV is ruthlessly useful and simple and should make decisions obvious to stakeholders.</p>
+<p>Another important distinction is how the display of this data is designed to activate System I or System II thinking (<span class="citation" data-cites="tversky1974">Tversky and Kahneman (<a href="references/index.html#ref-tversky1974" role="doc-biblioref">1974</a>)</span>). System I is fast, an automatic, whereas System II is slow and deliberate. Our ODV should focus on activating System I thinking, to quickly present an insight. Contrast this from an infographic you might see in a print newspaper, which is designed to be mulled over and viewed at length to reveal several insights with thoughtful consideration. While infographics can data visualization, this is less emphasized in ODV.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-tversky1974" class="csl-entry" role="listitem">
+Tversky, Amos, and Daniel Kahneman. 1974. <span>“Judgment Under Uncertainty: Heuristics and Biases.”</span> <em>Science</em> 185 (4157): 1124–31. <a href="https://doi.org/10.1126/science.185.4157.1124">https://doi.org/10.1126/science.185.4157.1124</a>.
+</div>
+</div>
 </section>
 </section>
 

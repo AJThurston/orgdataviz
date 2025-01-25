@@ -1,11 +1,6 @@
 ---
-format:
-  html:
-    toc: true
-    toc-expand: 3
-editor: source
+title: "Visualizing Time"
 ---
-# Visualizing Time
 
 - Things I wouldn't do; those racing barcharts that were popular a couple years ago on Reddit.
 
@@ -58,7 +53,7 @@ Some people suggest that you should have rounded lines to emphasize the overall 
 ### Communicating Uncertainty
 
 - 538 has a cool way of showing uncertainty "95% of people fall in this band"
-- ![](/images/fivethirtyeight_confidence_interval.png.png)
+- ![](/images/fivethirtyeight_confidence_interval.png)
 
 ## Categorical Events
 

@@ -24,7 +24,7 @@
     "href": "index.html#software",
     "title": "Organizational Data Visualization",
     "section": "Software",
-    "text": "Software\nDownload and install the following software:\n\n\n\nR\n\nOpen source, statistical computing & graphics environment\nLarge package (tool) library\nThe engine of our data visualization\n\n\n\nR Studio\n\nIntegrated Development Environment (IDE) for writing and running R code\n\n\n\nPositron (Beta)\n\nIDE for R code but flexible for other languages as well\nBeta software with full release Fall 2025\n\n\n\nQuarto\n\nNotes code an output in one R Markdown (.qmd) document\nUses Markdown language to create files exportable as HTML, PDF & Word docs\n\n\n\nGithub Desktop\n\nPopular git-based version control system\nDesktop version uses a graphic user interface (GUI) to simplify version control",
+    "text": "Software\nDownload and install the following software. If you need step-by-step instructions, a useful guide is available here:\n\n\n\nR\n\nOpen source, statistical computing & graphics environment\nLarge package (tool) library\nThe engine of our data visualization\n\n\n\nR Studio\n\nIntegrated Development Environment (IDE) for writing and running R code\n\n\n\nPositron (Beta)\n\nIDE for R code but flexible for other languages as well\nBeta software with full release Fall 2025\n\n\n\nQuarto\n\nNotes code an output in one R Markdown (.qmd) document\nUses Markdown language to create files exportable as HTML, PDF & Word docs\n\n\n\nGithub Desktop\n\nPopular git-based version control system\nDesktop version uses a graphic user interface (GUI) to simplify version control",
     "crumbs": [
       "Preface"
     ]
@@ -44,7 +44,7 @@
     "href": "index.html#what-is-org-dataviz",
     "title": "Organizational Data Visualization",
     "section": "What is Org Dataviz?",
-    "text": "What is Org Dataviz?\nData visualization is the communication of numeric information using graphic displays a skill, much like written & oral communication skills. Data visualization can also be art, designed to evoke a feeling or thought. Data visualization typically has two main functions: exploratory visualizations which reveal new patterns & relationships; explanatory visualizations evaluate hypotheses or aid decision-making. Not all data visualization is ODV.\nOrganizational data visualization is the production of visual displays of quantitative data to support organizational decision-making which aims to describe, explain, predict, and change human behavior at work. ODV is not just data visualization as in related technical fields like biology or operational business components like logistics since these focus on non-human behavior (e.g., animals in biology) or behaviors of non-human systems (e.g., supply chain bottlenecks in logistics). ODV is distinct from data art (e.g., reddit.com/r/dataisbeautiful) in that the primary purpose of data art is to entertain or for purely aesthetic purposes ODV is ruthlessly useful and simple and should make decisions obvious to stakeholders.",
+    "text": "What is Org Dataviz?\nData visualization is the communication of numeric information using graphic displays a skill, much like written & oral communication skills. Data visualization can also be art, designed to evoke a feeling or thought. Data visualization typically has two main functions: exploratory visualizations which reveal new patterns & relationships; explanatory visualizations evaluate hypotheses or aid decision-making. Not all data visualization is ODV.\nOrganizational data visualization is the production of visual displays of quantitative data to support organizational decision-making which aims to describe, explain, predict, and change human behavior at work. ODV is not just data visualization as in related technical fields like biology or operational business components like logistics since these focus on non-human behavior (e.g., animals in biology) or behaviors of non-human systems (e.g., supply chain bottlenecks in logistics). ODV is distinct from data art (e.g., reddit.com/r/dataisbeautiful) in that the primary purpose of data art is to entertain or for purely aesthetic purposes ODV is ruthlessly useful and simple and should make decisions obvious to stakeholders.\nAnother important distinction is how the display of this data is designed to activate System I or System II thinking (Tversky and Kahneman (1974)). System I is fast, an automatic, whereas System II is slow and deliberate. Our ODV should focus on activating System I thinking, to quickly present an insight. Contrast this from an infographic you might see in a print newspaper, which is designed to be mulled over and viewed at length to reveal several insights with thoughtful consideration. While infographics can data visualization, this is less emphasized in ODV.\n\n\n\n\nTversky, Amos, and Daniel Kahneman. 1974. “Judgment Under Uncertainty: Heuristics and Biases.” Science 185 (4157): 1124–31. https://doi.org/10.1126/science.185.4157.1124.",
     "crumbs": [
       "Preface"
     ]
@@ -64,7 +64,7 @@
     "href": "intro/index.html#data-information-knowledge-and-wisdom",
     "title": "1  Introduction",
     "section": "1.2 Data, Information, Knowledge, and Wisdom",
-    "text": "1.2 Data, Information, Knowledge, and Wisdom\n\nThe cognitive psychology of visual information processing\nVisual communication best practices\nReview of data types (e.g., nominal, ordinal, interval, ratio data)\nData, information, knowledge, and wisdom pyramid\nThe facts DON’T speak for themselves\nKeep it simple, stupid\nAGILE: Think like a software developer\n\nBHAG: Big Hairy Audacious Goals\nKPIs: Key Performance Indicator\nOKRs: Objective Key Results\n\nThe goal of this course is to give you a data visualization portfolio to make you competitive\nTell ’em what you’re going to tell them. Tell them. Then tell ’em what you just told them. \nTED: The beauty of data visualization - David McCandless (18 minutes)\n\n“Let the dataset change your mindset”\n\nCanva: How design thinking is used to solve problemsArchive",
+    "text": "1.2 Data, Information, Knowledge, and Wisdom\n\nThe cognitive psychology of visual information processing\nVisual communication best practices\nReview of data types (e.g., nominal, ordinal, interval, ratio data)\nData, information, knowledge, and wisdom pyramid\nThe facts DON’T speak for themselves\nKeep it simple, stupid\nAGILE: Think like a software developer\n\nBHAG: Big Hairy Audacious Goals\nKPIs: Key Performance Indicator\nOKRs: Objective Key Results\n\nThe goal of this course is to give you a data visualization portfolio to make you competitive\nTell ’em what you’re going to tell them. Tell them. Then tell ’em what you just told them. \nTED: The beauty of data visualization - David McCandless (18 minutes)\n\n“Let the dataset change your mindset”\n\nCanva: How design thinking is used to solve problemsArchive\n\nYou may have heard the phrase, “the data speak for themselves.” If that were the case, people would prefer nothing but a raw display of 1s and 0s like code from ‘The Matrix’ movie. The data do not speak for themselves, actually. Our job as ODV specialists to help the data tell their story through our deep knowledge of these values as well as how to communicate them to audiences who don’t speak our language. We must also avoid speaking on behalf of the data\n\n\n\n\n\n\n\n\nFigure 1.1\n\n\n\nCredit: Salma Sultana (LinkedIn)\n\n\n\n\n\n\n\n\n\nFigure 1.2\n\n\n\nCredit: Salma Sultana (LinkedIn)",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -124,7 +124,7 @@
     "href": "intro/index.html#color",
     "title": "1  Introduction",
     "section": "1.8 Color",
-    "text": "1.8 Color\n\n1.8.1 Color Perception\n\nColor perception: black face vs white face illusion: https://m.youtube.com/watch?v=zXU0O0OqkmQ\nColor is an important part of data visualization because it helps to highlight the most important differences or trends, making it easy to see. It’s one of the fundamental ways to highlight data.\nColor is also an important part of organizational or individual branding. Thinking about the ubiquity of Coca-Cola red or Pepsi blue.\nColor perception from evolutionary psychology foundation and then cultural enforcement which drives differences\n\n\n\n1.8.2 Color Theory\n\nColor Wheel: The primary colors are red, green, and blue because that’s what our eyes can see. Red, blue, yellow is additive color theory from paint pigment days and not really representative of how color works.\nColor Harmony\n\nColor harmony involves choosing colors that work well together and are pleasing to the eye. Common color harmony schemes include:\nComplementary Colors: Colors opposite each other on the color wheel (e.g., red and green) that create high contrast and vibrant looks.\nAnalogous Colors: Colors next to each other on the color wheel (e.g., blue, blue-green, and green) that create serene and comfortable designs.\nTriadic Colors: Three colors evenly spaced on the color wheel (e.g., red, yellow, and blue) that offer balanced and vibrant combinations.\nSplit-Complementary Colors: A base color and the two colors adjacent to its complementary color, offering high contrast but less tension than complementary colors.\n\nColor Context: The perception of a color can change depending on its context. For instance, a color may appear different against various background colors. Understanding how colors interact and influence each other helps in creating effective visualizations.\n\n\n\n1.8.3 Color Psychology\n(I need to look into the research on this more before I teach it) Colors can evoke emotions and associations: - Red: Energy, urgency, passion. - Blue: Trust, calm, professionalism. - Green: Growth, health, tranquility. - Yellow: Happiness, attention, caution. - Purple: Luxury, creativity, wisdom. - Orange: Enthusiasm, warmth, caution. - Color Associations - Red - Negative Values: Red is often used to indicate negative values, losses, or decreases. - Errors and Alerts: Red can signify errors, warnings, or urgent issues that need immediate attention. (there’s research on this, the red pen effect) - Critical States: In status indicators, red often represents critical conditions or failures. - Green - Positive Values: Green is commonly associated with positive values, gains, or increases. - Success and Approval: Green can indicate success, completion, or approval. - Safe and Normal States: In status indicators, green represents safe, normal, or optimal conditions. - Yellow - Caution: Yellow often signifies caution, warnings, or conditions that require attention but are not yet critical. - Intermediate Values: Yellow can be used for intermediate values between positive (green) and negative (red) extremes. - Blue - Neutral: Blue is often used as a neutral color to represent general information, averages, or non-critical data. - Information and Support: Blue can indicate informational messages or support functions. - Orange - Warning: Orange is used to indicate warnings or issues that are of moderate concern. - Pending Actions: It can also represent pending actions or items that are in progress. - Color Usage: Using color effectively in data visualization helps in communicating information clearly: - Highlighting Important Data: Use bold or contrasting colors to emphasize key data points. - Grouping Data: Use similar colors to group related data, making patterns and relationships easier to identify. - Sequential Data: Use gradient scales (light to dark) to represent sequential data, indicating progression or intensity. - Diverging Data: Use two contrasting colors to show deviation from a central point, often used in heat maps or to show differences.",
+    "text": "1.8 Color\n\n1.8.1 Color Perception\n\nColor perception: black face vs white face illusion: https://m.youtube.com/watch?v=zXU0O0OqkmQ\nColor is an important part of data visualization because it helps to highlight the most important differences or trends, making it easy to see. It’s one of the fundamental ways to highlight data.\nColor is also an important part of organizational or individual branding. Thinking about the ubiquity of Coca-Cola red or Pepsi blue.\nColor perception from evolutionary psychology foundation and then cultural enforcement which drives differences\n\n\n\n1.8.2 Color Theory\n\nColor Wheel: The primary colors are red, green, and blue because that’s what our eyes can see. Red, blue, yellow is additive color theory from paint pigment days and not really representative of how color works.\nColor Harmony\n\nColor harmony involves choosing colors that work well together and are pleasing to the eye. Common color harmony schemes include:\nComplementary Colors: Colors opposite each other on the color wheel (e.g., red and green) that create high contrast and vibrant looks.\nAnalogous Colors: Colors next to each other on the color wheel (e.g., blue, blue-green, and green) that create serene and comfortable designs.\nTriadic Colors: Three colors evenly spaced on the color wheel (e.g., red, yellow, and blue) that offer balanced and vibrant combinations.\nSplit-Complementary Colors: A base color and the two colors adjacent to its complementary color, offering high contrast but less tension than complementary colors.\n\nColor Context: The perception of a color can change depending on its context. For instance, a color may appear different against various background colors. Understanding how colors interact and influence each other helps in creating effective visualizations.\n\n\n\n1.8.3 Color Psychology\n(I need to look into the research on this more before I teach it) Colors can evoke emotions and associations: - Red: Energy, urgency, passion. - Blue: Trust, calm, professionalism. - Green: Growth, health, tranquility. - Yellow: Happiness, attention, caution. - Purple: Luxury, creativity, wisdom. - Orange: Enthusiasm, warmth, caution. - Color Associations - Red - Negative Values: Red is often used to indicate negative values, losses, or decreases. - Errors and Alerts: Red can signify errors, warnings, or urgent issues that need immediate attention. (there’s research on this, the red pen effect) - Critical States: In status indicators, red often represents critical conditions or failures. - Green - Positive Values: Green is commonly associated with positive values, gains, or increases. - Success and Approval: Green can indicate success, completion, or approval. - Safe and Normal States: In status indicators, green represents safe, normal, or optimal conditions. - Yellow - Caution: Yellow often signifies caution, warnings, or conditions that require attention but are not yet critical. - Intermediate Values: Yellow can be used for intermediate values between positive (green) and negative (red) extremes. - Blue - Neutral: Blue is often used as a neutral color to represent general information, averages, or non-critical data. - Information and Support: Blue can indicate informational messages or support functions. - Orange - Warning: Orange is used to indicate warnings or issues that are of moderate concern. - Pending Actions: It can also represent pending actions or items that are in progress. - Color Usage: Using color effectively in data visualization helps in communicating information clearly: - Highlighting Important Data: Use bold or contrasting colors to emphasize key data points. - Grouping Data: Use similar colors to group related data, making patterns and relationships easier to identify. - Sequential Data: Use gradient scales (light to dark) to represent sequential data, indicating progression or intensity. - Diverging Data: Use two contrasting colors to show deviation from a central point, often used in heat maps or to show differences.\nPeople sometimes want you to avoid red because it can be seen as intimidating or people might get defensive. Red pen paper? It did replicate",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -214,7 +214,7 @@
     "href": "categories/index.html#frequencies",
     "title": "3  Visualizing Categories",
     "section": "",
-    "text": "3.1.1 Barplots\n\nlibrary(ggplot2)\ndat &lt;- read.csv(here::here(\"data/validation.csv\"), header = T)\n\nggplot(data = dat, aes(x = male, y = lapr)) +\n    geom_bar(position = \"dodge\", \n            stat = \"summary\", \n            fun = \"mean\")\n\n\n\n\n\n\n\n\n\n\n3.1.2 Endpoints\n Credit: Salma Sultana (LinkedIn)\n\n\n3.1.3 Targets\n\n\n\n\n3.1.4 Density Plot\n\nDemonstrating amounts (e.g., frequencies, distributions bar charts)\n\nBar charts, loading bar chart as whitespace is information as well\nCommunicating the lack of results is just as important as communicating the presence of results. Audiences are predispositioned to want to look for differences, but you must help them understand the MANIFOLD of differences, the larger context, that while there may be 2 differences among 10, the other 8 are not. You’d be surprised how often you need to state this explicitly.\n\n\n\n\n3.1.5 Icon array\nIcon arrays are useful alternatives to bar plots because they are empirically better understood by non-technical audiences (Zhang et al. 2018).\n\n\n3.1.6 Jitterplot",
+    "text": "3.1.1 Barplots\n\nlibrary(ggplot2)\ndat &lt;- read.csv(here::here(\"data/validation.csv\"), header = T)\n\nggplot(data = dat, aes(x = male, y = lapr)) +\n    geom_bar(position = \"dodge\", \n            stat = \"summary\", \n            fun = \"mean\")\n\n\n\n\n\n\n\n\n\nAlso lollipop charts\n\n\n\n3.1.2 Endpoints\n Credit: Salma Sultana (LinkedIn)\n\n\n3.1.3 Targets\n\n\n\n\n3.1.4 Density Plot\n\nDemonstrating amounts (e.g., frequencies, distributions bar charts)\n\nBar charts, loading bar chart as whitespace is information as well\nCommunicating the lack of results is just as important as communicating the presence of results. Audiences are predispositioned to want to look for differences, but you must help them understand the MANIFOLD of differences, the larger context, that while there may be 2 differences among 10, the other 8 are not. You’d be surprised how often you need to state this explicitly.\n\n\n\n\n3.1.5 Icon array\nIcon arrays are useful alternatives to bar plots because they are empirically better understood by non-technical audiences (Zhang et al. 2018).\n\n\n3.1.6 Jitterplot",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Categories</span>"
     ]
@@ -234,7 +234,7 @@
     "href": "categories/index.html#parts-of-a-whole",
     "title": "3  Visualizing Categories",
     "section": "3.3 Parts of a Whole",
-    "text": "3.3 Parts of a Whole\n\n3.3.1 Pie Charts\nDo not make pie charts. They are very common but difficult to resolve as our brains struggle with how to resolve circles and are not adept at determining length from circumference.\nWatch this video to see just how bad our brains are at this:\n\n\n\n\n\n\nFigure 3.1: Which is longer? Credit: Modern Rogue (YouTube: 1 min)\n\n\n\nIf you’re asked to make a pie chart, please show this video to your boss or whoever asked you to make the pie chart. You, too, can join the good fight against pie charts.\nAnother issue is that pie charts are essentially area charts.\n\n\n3.3.2 Knolling\n\n\n3.3.3 Mosiac Plots\n\nOr parts of a whole\n\nWe don’t do pie charts because of this:\n\n\n\nOur brains are not built to process just how long things are around\n\nTricolor/ternary/triangle plot: WSJ: What type of voter are you?\n\nInstagram link  \n\nhttps://github.com/jschoeley/tricolore",
+    "text": "3.3 Parts of a Whole\n\n3.3.1 Pie Charts\nDo not make pie charts. They are very common but difficult to resolve as our brains struggle with how to resolve circles and are not adept at determining length from circumference.\nWatch this video to see just how bad our brains are at this:\n\n\n\n\n\n\nFigure 3.1: Which is longer? Credit: Modern Rogue (YouTube: 1 min)\n\n\n\nIf you’re asked to make a pie chart, please show this video to your boss or whoever asked you to make the pie chart. You, too, can join the good fight against pie charts.\nAnother issue is that pie charts are essentially area charts.\nResources\n\nMorgan Depenbush, PhD (Google): Alternative to Pie Charts\n\n\n\n3.3.2 Knolling\n\n\n3.3.3 Mosiac Plots\nAlso referred to as “treemaps” and “eikosograms” for join probabilities\n\nhttps://cran.r-project.org/web/packages/eikosograms/vignettes/Introduction.html",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Categories</span>"
     ]
@@ -243,8 +243,8 @@
     "objectID": "categories/index.html#appendix",
     "href": "categories/index.html#appendix",
     "title": "3  Visualizing Categories",
-    "section": "3.4 Appendix",
-    "text": "3.4 Appendix\n\n\n\n\n\n\nFigure 3.2: Make Beautiful Excel Charts Like The Economist Credit: Leila Gharani (YouTube: 19 minutes)\n\n\n\n\n\n\n\nZhang, D. C., S. Highhouse, M. E. Brooks, and Y. Zhang. 2018. “Communicating the Validity of Structured Job Interviews with Graphical Visual Aids.” International Journal of Selection and Assessment. https://doi.org/10.1111/ijsa.12220.",
+    "section": "3.5 Appendix",
+    "text": "3.5 Appendix\n\n\n\n\n\n\nFigure 3.2: Make Beautiful Excel Charts Like The Economist Credit: Leila Gharani (YouTube: 19 minutes)\n\n\n\n\n\n\n\nZhang, D. C., S. Highhouse, M. E. Brooks, and Y. Zhang. 2018. “Communicating the Validity of Structured Job Interviews with Graphical Visual Aids.” International Journal of Selection and Assessment. https://doi.org/10.1111/ijsa.12220.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Categories</span>"
     ]
@@ -284,7 +284,7 @@
     "href": "describingrelationships/index.html#correlation",
     "title": "4  Visualizing Relationships: Describing Relationships",
     "section": "4.3 Correlation",
-    "text": "4.3 Correlation\n\nSimple correlation\n\n\n4.3.1 Scatterplots\n\n\n4.3.2 Correlelogram\n\n\n4.3.3 Ternary plots\n\n\n4.3.4 Upset plots\nVenn diagrams and Ballentine plots.",
+    "text": "4.3 Correlation\nCorrelations are most frequently used to describe a relationship between two continuous variables. In another way, a statistically significant correlation tells when two things are happening together so frequently it’s unlikely to just be a coincidence.\nFind the funniest correlation you can: https://tylervigen.com/spurious-correlations\n\nSimple correlation\n\n\n4.3.1 Scatterplots\n\n\n4.3.2 Correlelogram\n\n\n4.3.3 Ternary plots\n\n\n4.3.4 Upset plots\nVenn diagrams and Ballentine plots.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Relationships: Descriptive</span>"
     ]
@@ -304,7 +304,7 @@
     "href": "explainingrelationships/index.html",
     "title": "5  Visualizing Relationships: Explaining Relationships",
     "section": "",
-    "text": "5.0.1 Generalized Linear Modeling\n\nLogistic regression\n\nPredicted probabilities ajthurston.com/predprobs\n\nhttp://a.web.umkc.edu/andersonbri/InterpretinglogisticregressionPartII.html\nhttps://info.umkc.edu/drbanderson/interpreting-logistic-regression-part-i/\nhttp://a.web.umkc.edu/andersonbri/Interpretinglogisticregression.html\nlibrary.virginia.edu/data/articles/simulating-a-logistic-regression-model\nhttps://stats.oarc.ucla.edu/r/dae/logit-regression/\n\nClassification accuracy ajthurston.com/accuracy\n\nMultiple correlation\nMultiple regression\nRelative importance/dominance analysis/feature selection\nConnections (e.g., network analysis)\nPolynomial Regression and Response Surface Analysis (PRRSA) (Edwards & Parry, 1993)\n![[response_surface_plots.png | 500]] ### Machine Learning\nVisualization of decision support techniques (e.g., CART/random forests)\nstats.stackexchange.com/questions/467697/visualizing-regression-with-categorical-variables ### Networks\nTED: A visual history of human knowledge - Manuel Lima (13 minutes)\n\nDon’t do radial convergence\nDon’t do arc diagrams",
+    "text": "5.1 Generalized Linear Modeling",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Relationships: Explanatory</span>"
     ]
@@ -334,7 +334,7 @@
     "href": "context/index.html",
     "title": "8  Contextual Considerations",
     "section": "",
-    "text": "8.1 Words Matter(?)\nThe language used to describe the data matters - Perceptions of probability: https://github.com/zonination/perceptions  - How to communicate statistical concepts without sounding like a robot: https://www.linkedin.com/posts/morgandepenbusch_data-analyst-cheat-sheet-ugcPost-7275556209892446210-6Ilu/",
+    "text": "8.1 Words Matter(?)\nThe language used to describe the data matters - Perceptions of probability: https://github.com/zonination/perceptions  - How to communicate statistical concepts without sounding like a robot: https://www.linkedin.com/posts/morgandepenbusch_data-analyst-cheat-sheet-ugcPost-7275556209892446210-6Ilu/\nProbabilistic language can mislead. In People v. Collins (1968), a California couple was convicted of robbery based largely on probabilistic evidence. The prosecution introduced statistical testimony suggesting that the chance of another couple matching the defendants’ physical description was 1 in 12 million. This calculation was based on multiplying assumed probabilities of various traits (e.g., a black man with a beard and a white woman with a blond ponytail driving a yellow car). The court ruled that this statistical evidence was improperly presented and lacked a scientific basis. The conviction was overturned due to the misuse of probability, highlighting the dangers of applying flawed statistical reasoning in criminal trials.",
     "crumbs": [
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Context</span>"
     ]
@@ -474,9 +474,59 @@
     "href": "references/index.html",
     "title": "References",
     "section": "",
-    "text": "Zhang, D. C., S. Highhouse, M. E. Brooks, and Y. Zhang. 2018.\n“Communicating the Validity of Structured Job Interviews with\nGraphical Visual Aids.” International Journal of Selection\nand Assessment. https://doi.org/10.1111/ijsa.12220.",
+    "text": "Sackett, Paul R., Charlene Zhang, Christopher M. Berry, and Filip\nLievens. 2022. “Revisiting Meta-Analytic Estimates of Validity in\nPersonnel Selection: Addressing Systematic Overcorrection for\nRestriction of Range.” Journal of Applied Psychology 107\n(11): 2040–68. https://doi.org/10.1037/apl0000994.\n\n\nSchmidt, Frank L., and John E. Hunter. 1998. “The Validity and\nUtility of Selection Methods in Personnel Psychology: Practical and\nTheoretical Implications of 85 Years of Research Findings.”\nPsychological Bulletin 124 (2): 262–74. https://doi.org/https://doi.org/10.1037/0033-2909.124.2.262.\n\n\nZhang, D. C., S. Highhouse, M. E. Brooks, and Y. Zhang. 2018.\n“Communicating the Validity of Structured Job Interviews with\nGraphical Visual Aids.” International Journal of Selection\nand Assessment. https://doi.org/10.1111/ijsa.12220.",
     "crumbs": [
       "References"
+    ]
+  },
+  {
+    "objectID": "categories/index.html#other",
+    "href": "categories/index.html#other",
+    "title": "3  Visualizing Categories",
+    "section": "3.4 Other",
+    "text": "3.4 Other\n\nTricolor/ternary/triangle plot: WSJ: What type of voter are you?\nInstagram link   - https://github.com/jschoeley/tricolore",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Categories</span>"
+    ]
+  },
+  {
+    "objectID": "explainingrelationships/index.html#generalized-linear-modeling",
+    "href": "explainingrelationships/index.html#generalized-linear-modeling",
+    "title": "5  Visualizing Relationships: Explaining Relationships",
+    "section": "",
+    "text": "Logistic regression\nPredicted probabilities ajthurston.com/predprobs\n\nhttp://a.web.umkc.edu/andersonbri/InterpretinglogisticregressionPartII.html\nhttps://info.umkc.edu/drbanderson/interpreting-logistic-regression-part-i/\nhttp://a.web.umkc.edu/andersonbri/Interpretinglogisticregression.html\nlibrary.virginia.edu/data/articles/simulating-a-logistic-regression-model\nhttps://stats.oarc.ucla.edu/r/dae/logit-regression/",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Relationships: Explanatory</span>"
+    ]
+  },
+  {
+    "objectID": "explainingrelationships/index.html#classification-accuracy",
+    "href": "explainingrelationships/index.html#classification-accuracy",
+    "title": "5  Visualizing Relationships: Explaining Relationships",
+    "section": "5.2 Classification Accuracy",
+    "text": "5.2 Classification Accuracy\n\najthurston.com/accuracy\nThe 2x2 matrix we live and die by\nVeritasium video on motivated reasoning (although this study failed to replicate)\nMultiple correlation\nMultiple regression\nRelative importance/dominance analysis/feature selection\nConnections (e.g., network analysis)\nPolynomial Regression and Response Surface Analysis (PRRSA) (Edwards & Parry, 1993)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Relationships: Explanatory</span>"
+    ]
+  },
+  {
+    "objectID": "explainingrelationships/index.html#machine-learning",
+    "href": "explainingrelationships/index.html#machine-learning",
+    "title": "5  Visualizing Relationships: Explaining Relationships",
+    "section": "5.3 Machine Learning",
+    "text": "5.3 Machine Learning\n\nVisualization of decision support techniques (e.g., CART/random forests)\nstats.stackexchange.com/questions/467697/visualizing-regression-with-categorical-variables",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Relationships: Explanatory</span>"
+    ]
+  },
+  {
+    "objectID": "explainingrelationships/index.html#networks",
+    "href": "explainingrelationships/index.html#networks",
+    "title": "5  Visualizing Relationships: Explaining Relationships",
+    "section": "5.4 Networks",
+    "text": "5.4 Networks\n\nTED: A visual history of human knowledge - Manuel Lima (13 minutes)\nDon’t do radial convergence\nDon’t do arc diagrams\nConsilience: https://x.com/SwipeWright/status/1879273164427202662",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Relationships: Explanatory</span>"
     ]
   }
 ]

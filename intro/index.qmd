@@ -1,12 +1,6 @@
 ---
-format:
-  html:
-    toc: true
-    toc-expand: 3
-editor: source
+title: "Introduction"
 ---
-
-# Introduction
 
 ## A multidisplinary approach
 
@@ -31,6 +25,29 @@ ODV requires a multidisplinary approach. First, borrowing from computer science,
 -   [TED: The beauty of data visualization - David McCandless (18 minutes)](https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization)
     -   "Let the dataset change your mindset"
 -   [Canva: How design thinking is used to solve problems](https://www.canva.com/learn/design-thinking/)[Archive](https://archive.is/GdwuO)
+
+You may have heard the phrase, "the data speak for themselves." If that were the case, people would prefer nothing but a raw display of 1s and 0s like code from 'The Matrix' movie. The data do not speak for themselves, actually. Our job as ODV specialists to help the data tell their story through our deep knowledge of these values as well as how to communicate them to audiences who don't speak our language. We must also avoid speaking on behalf of the data
+
+:::: {.columns}
+
+::: {.column width="49%"}
+
+![](/images/matrix_code.gif)
+
+Credit: [Salma Sultana (LinkedIn)](https://www.linkedin.com/posts/-salma-sultana-_in-data-communication-one-of-the-most-overlooked-activity-7274445673494691840-qAid)
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="49%"}
+
+![](/images/data_speak_themselves.png)
+
+Credit: [Salma Sultana (LinkedIn)](https://www.linkedin.com/posts/-salma-sultana-_in-data-communication-one-of-the-most-overlooked-activity-7274445673494691840-qAid)
+:::
+
+::::
 
 ## Visual Hierarchy
 
@@ -121,3 +138,5 @@ ODV requires a multidisplinary approach. First, borrowing from computer science,
 ### Color Psychology
 
 (I need to look into the research on this more before I teach it) Colors can evoke emotions and associations: - Red: Energy, urgency, passion. - Blue: Trust, calm, professionalism. - Green: Growth, health, tranquility. - Yellow: Happiness, attention, caution. - Purple: Luxury, creativity, wisdom. - Orange: Enthusiasm, warmth, caution. - Color Associations - Red - Negative Values: Red is often used to indicate negative values, losses, or decreases. - Errors and Alerts: Red can signify errors, warnings, or urgent issues that need immediate attention. (there's research on this, the red pen effect) - Critical States: In status indicators, red often represents critical conditions or failures. - Green - Positive Values: Green is commonly associated with positive values, gains, or increases. - Success and Approval: Green can indicate success, completion, or approval. - Safe and Normal States: In status indicators, green represents safe, normal, or optimal conditions. - Yellow - Caution: Yellow often signifies caution, warnings, or conditions that require attention but are not yet critical. - Intermediate Values: Yellow can be used for intermediate values between positive (green) and negative (red) extremes. - Blue - Neutral: Blue is often used as a neutral color to represent general information, averages, or non-critical data. - Information and Support: Blue can indicate informational messages or support functions. - Orange - Warning: Orange is used to indicate warnings or issues that are of moderate concern. - Pending Actions: It can also represent pending actions or items that are in progress. - Color Usage: Using color effectively in data visualization helps in communicating information clearly: - Highlighting Important Data: Use bold or contrasting colors to emphasize key data points. - Grouping Data: Use similar colors to group related data, making patterns and relationships easier to identify. - Sequential Data: Use gradient scales (light to dark) to represent sequential data, indicating progression or intensity. - Diverging Data: Use two contrasting colors to show deviation from a central point, often used in heat maps or to show differences.
+
+People sometimes want you to avoid red because it can be seen as intimidating or people might get defensive. Red pen paper? It did replicate

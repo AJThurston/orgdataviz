@@ -1,33 +1,38 @@
-# Visualizing Relationships: Explaining Relationships
+---
+title: "Visualizing Relationships: Explaining Relationships"
+---
 
-### Generalized Linear Modeling
+## Generalized Linear Modeling
 
--   Logistic regression
+- Logistic regression
+- Predicted probabilities ajthurston.com/predprobs
+    - <http://a.web.umkc.edu/andersonbri/InterpretinglogisticregressionPartII.html>
+    - <https://info.umkc.edu/drbanderson/interpreting-logistic-regression-part-i/>
+    - <http://a.web.umkc.edu/andersonbri/Interpretinglogisticregression.html>
+    - [library.virginia.edu/data/articles/simulating-a-logistic-regression-model](https://library.virginia.edu/data/articles/simulating-a-logistic-regression-model)
+    - <https://stats.oarc.ucla.edu/r/dae/logit-regression/>
 
-    -   Predicted probabilities ajthurston.com/predprobs
-        -   <http://a.web.umkc.edu/andersonbri/InterpretinglogisticregressionPartII.html>
-        -   <https://info.umkc.edu/drbanderson/interpreting-logistic-regression-part-i/>
-        -   <http://a.web.umkc.edu/andersonbri/Interpretinglogisticregression.html>
-        -   [library.virginia.edu/data/articles/simulating-a-logistic-regression-model](https://library.virginia.edu/data/articles/simulating-a-logistic-regression-model)
-        -   <https://stats.oarc.ucla.edu/r/dae/logit-regression/>
-    -   Classification accuracy ajthurston.com/accuracy
+## Classification Accuracy
 
--   Multiple correlation
+- ajthurston.com/accuracy
+- The 2x2 matrix we live and die by
+- Veritasium video on motivated reasoning (although this study failed to replicate)
 
--   Multiple regression
-
--   Relative importance/dominance analysis/feature selection
-
--   Connections (e.g., network analysis)
-
--   Polynomial Regression and Response Surface Analysis (PRRSA) (Edwards & Parry, 1993)\
-    \![\[response_surface_plots.png \| 500\]\] \### Machine Learning
+- Multiple correlation
+- Multiple regression
+- Relative importance/dominance analysis/feature selection
+- Connections (e.g., network analysis)
+- Polynomial Regression and Response Surface Analysis (PRRSA) (Edwards & Parry, 1993)
+![](/images/response_surface_plots.png)
+    
+## Machine Learning
 
 -   Visualization of decision support techniques (e.g., CART/random forests)
+-   stats.stackexchange.com/questions/467697/visualizing-regression-with-categorical-variables
 
--   stats.stackexchange.com/questions/467697/visualizing-regression-with-categorical-variables \### Networks
+## Networks
 
--   [TED: A visual history of human knowledge - Manuel Lima (13 minutes)](https://www.ted.com/talks/manuel_lima_a_visual_history_of_human_knowledge)
-
-    -   Don't do radial convergence
-    -   Don't do arc diagrams
+- [TED: A visual history of human knowledge - Manuel Lima (13 minutes)](https://www.ted.com/talks/manuel_lima_a_visual_history_of_human_knowledge)
+- Don't do radial convergence
+- Don't do arc diagrams
+- Consilience: https://x.com/SwipeWright/status/1879273164427202662

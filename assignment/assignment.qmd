@@ -1,0 +1,31 @@
+---
+title: "Example Org. Dataviz (ODV) Assignment"
+author: "AJ Thurston, PhD"
+---
+
+## Source
+
+![Chartjunk](/images/chartjunk.png)
+
+## Data
+
+Note, your data must either be reproduced entirely here (e.g., written in a code cell as below) or it must be publicly available in a CSV format with a codebook (e.g., [ajthurston.com/validation](https://www.ajthurston.com))
+
+```{r data}
+dat <- data.frame(
+  year = c(1972, 1974, 1976, 1978, 1980, 1982),
+  millions = c(50, 75, 125, 175, 225, 300)
+)
+```
+
+## Plot
+
+You must provide your own, original plot. Refer to the syllabus with respect to the difference between acceptable and exceptional performance with your plots.
+
+```{r plot}
+library(ggplot2)
+
+ggplot(data = dat, aes(x = year, y = millions)) +
+    geom_bar(stat = "identity") + 
+    theme_minimal()
+```
